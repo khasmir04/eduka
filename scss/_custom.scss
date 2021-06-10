@@ -1,0 +1,326 @@
+body {
+  overflow: hidden;
+  font-family: "Ubuntu", sans-serif;
+}
+
+#header {
+  height: 80px;
+}
+
+#side-menu {
+  position: absolute;
+  width: 220px;
+  height: calc(100vh - 80px);
+  background: $white;
+  left: -220px;
+  z-index: 1;
+  bottom: 0;
+  transition: 0.25s;
+}
+
+#inbox {
+  width: 100vw;
+  margin-left: auto;
+  height: calc(100vh - 80px);
+}
+
+#contacts {
+  height: 100%;
+}
+
+#conversation {
+  height: 100%;
+}
+
+#contact-info {
+  height: 100%;
+}
+
+.logo__image {
+  width: 100%;
+}
+
+.logo__img {
+  width: 137px;
+  height: 24px;
+}
+
+.header__search > div {
+  min-width: 50px;
+}
+
+.header__avatar__image {
+  max-width: 48px;
+  width: 100%;
+}
+
+.header__avatar__img {
+  height: 48px;
+  width: 48px;
+}
+
+.user__avatar__image {
+  max-width: 40px;
+  width: 100%;
+}
+
+.user__avatar__img {
+  height: 40px;
+  width: 40px;
+}
+
+.contacts__header__options .btn.active {
+  background-color: $white !important;
+  color: $primary !important;
+}
+
+.contacts__content {
+  height: calc(100vh - 200px);
+}
+
+.contacts__conversation.active {
+  background: $active-chat;
+}
+
+.contacts__conversation:hover {
+  background: $light;
+}
+
+.contact__avatar__image {
+  max-width: 48px;
+  width: 100%;
+}
+
+.contact__avatar__img {
+  height: 48px;
+  width: 48px;
+}
+
+.contact-info__profile__image {
+  max-width: 104px;
+  width: 100%;
+  i {
+    color: $primary;
+    right: 10%;
+  }
+}
+
+.contact-info__profile__img {
+  width: 104px;
+  height: 104px;
+}
+
+.conversation {
+  height: calc(100vh - 80px);
+}
+
+.conversation__header {
+  height: 80px;
+}
+
+.conversation__header__image {
+  width: 100%;
+  max-width: 48px;
+}
+
+.conversation__header__img {
+  height: 48px;
+  width: 48px;
+}
+
+.conversation__input {
+  height: 72px;
+}
+
+.conversation__messages {
+  max-height: calc(100vh - 232px);
+}
+
+.swiper-container {
+  width: 100%;
+  height: 55px;
+}
+
+// .simplebar-track.simplebar-horizontal {
+//   display: none;
+// }
+
+// .simplebar-content {
+//   overflow-x: hidden;
+// }
+
+.media__item {
+  max-width: 55px;
+  width: 100%;
+}
+
+.go-pro__image {
+  max-width: 238px;
+  width: 100%;
+}
+
+.go-pro__img {
+  width: 238px;
+  height: 190px;
+}
+
+// Custom css for messages in preparation for API
+.messages__reply {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  margin-bottom: 32px;
+  margin-right: auto;
+  h2 {
+    margin: 0;
+    margin-bottom: 8px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .reply__content {
+    display: flex;
+    font-size: 14px;
+    max-width: 400px;
+    color: #646464;
+    border-top-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    padding: 12px 16px;
+    background: #fff;
+  }
+  .message {
+    line-height: 25px;
+    margin-right: 8px;
+    margin-bottom: 0;
+  }
+  .time-stamp {
+    align-self: flex-end;
+    color: #969696;
+    line-height: 16px;
+    margin-bottom: 0;
+  }
+}
+
+.messages__sent {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 32px;
+  margin-left: auto;
+  .sent__content {
+    display: flex;
+    font-size: 14px;
+    max-width: 400px;
+    color: #fff;
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    padding: 12px 16px;
+    background: $primary;
+  }
+  .message {
+    line-height: 25px;
+    margin-right: 8px;
+    margin-bottom: 0;
+  }
+  .time-stamp {
+    align-self: flex-end;
+    color: #f4f4f4;
+    line-height: 16px;
+    margin-bottom: 0;
+  }
+}
+
+.reply__image {
+  max-width: 40px;
+  width: 100%;
+}
+
+.reply__img {
+  width: 40px;
+  height: 40px;
+}
+
+.notif.active {
+  margin-bottom: 0;
+  font-size: 14px;
+  color: $white;
+  line-height: 16px;
+  margin-left: auto;
+  background: $secondary;
+  border-radius: 50%;
+  padding: 4px 8px;
+}
+
+.nav-link.active {
+  i,
+  span {
+    color: $primary !important;
+  }
+  background: linear-gradient(90deg, #f1f0f9 100%, rgba(241, 240, 249, 0) 0%);
+}
+
+//ADD TO BOOTSTRAP Utilities
+.link-unstyled {
+  text-decoration: none !important;
+}
+
+.lh-24 {
+  line-height: 24px;
+}
+
+.p-12 {
+  padding: 12px;
+}
+
+.me-c-145 {
+  margin-right: 145px;
+}
+
+.square {
+  width: 32px;
+  height: 32px;
+}
+
+.rad {
+  border-radius: 4px;
+  &.rad-12 {
+    border-radius: 12px;
+  }
+  &.rad-circle {
+    border-radius: 50%;
+  }
+}
+
+.notif-inbox {
+  margin-top: -16px;
+  margin-left: -16px;
+}
+
+.show-dashboard {
+  left: 0 !important;
+}
+// Medium
+@media (min-width: 768px) {
+  .header__search > div {
+    min-width: 300px;
+  }
+}
+
+// Large
+@media (min-width: 992px) {
+  .header__search > div {
+    min-width: 450px;
+  }
+}
+
+// XLarge
+@media (min-width: 1200px) {
+  #side-menu {
+    position: fixed;
+    left: 0;
+    transition: 0.25s;
+  }
+  #inbox {
+    width: calc(100vw - 220px);
+  }
+}
