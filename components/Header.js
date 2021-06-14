@@ -1,22 +1,21 @@
 import React, { useState } from "react";
-import Image from 'next/image';
-import Dropdown from './DropdownOrg';
-import DropdownR from './DropdownUser';
+import DropdownUser from './DropdownUser';
+import DropdownOrg from './DropdownOrg';
 
 function Header({toggleSidebar}) {
      return (
         <div>
-            <header id="header" className="border border-r-1 border-c_light relative">
+            <header id="header" className="border-b-2 border-c_light relative">
                 <div className="container-fluid header-container p-4">
                     <div className="flex items-center">
                         <div>
                             <div className="flex items-center">
                             <div id="header__avatar__image" className="header__avatar__image mr-4" onClick={toggleSidebar}>
-                                <Image className="header__avatar__img" src="/img/org-avatar.png" alt="org-avatar-image" width="48" height="48"/>
+                                <img className="header__avatar__img" src="/img/org-avatar.png" alt="org-avatar-image"/>
                             </div>
                             <div className="hidden md:flex flex-col justify-center mr-2">
                                 <h2 className="m-0 text-base font-medium ">Team UI</h2>
-                                <p className="m-0 text-base text-black text-c_gray">team@dimo.com</p>
+                                <p className="m-0 text-base text-c_gray">team@dimo.com</p>
                             </div>
                             {/* <div className="dropdown">
                                 <i className="bi bi-chevron-down text-base leading-6 text-tertiary btn" type="button" id="dropdownOrg" data-bs-toggle="dropdown" aria-expanded="false"></i>
@@ -26,13 +25,13 @@ function Header({toggleSidebar}) {
                                 <li><a className="dropdown-item" href="#">Team Developer</a></li>
                                 </ul>
                             </div> */}
-                            <DropdownR></DropdownR>
+                            <DropdownOrg></DropdownOrg>
                             </div>
                         </div>
                         <div className="hidden xl:block ml-10">
                             <div>
                             <p className="m-0 font-medium">Message</p>
-                            <p className="m-0 text-base text-black text-c_gray whitespace-nowrap ">Send your friends a message</p>
+                            <p className="m-0 text-base text-c_gray whitespace-nowrap ">Send your friends a message</p>
                             </div>
                         </div>
                         {/* <div className="header__search m-auto">
@@ -58,7 +57,7 @@ function Header({toggleSidebar}) {
                             <div className="flex items-center">
                                 <i className="bi bi-bell-fill text-lg mr-6 text-tertiary"></i>
                                 <div className="user__avatar__image mr-2">
-                                    <Image className="user__avatar__img" src="/img/user-avatar.png" alt="user-avatar-img" width="40" height="40"/>
+                                    <img className="user__avatar__img" src="/img/user-avatar.png" alt="user-avatar-img"/>
                                 </div>
                                 {/* <div className="dropdown">
                                     <i className="bi bi-chevron-down text-base leading-6 text-tertiary btn pr-0" type="button" id="dropdownUser" data-bs-toggle="dropdown" aria-expanded="false"></i>
@@ -67,7 +66,7 @@ function Header({toggleSidebar}) {
                                     <li><a className="dropdown-item" href="#">Logout</a></li>
                                     </ul>
                                 </div> */}
-                                <Dropdown></Dropdown>
+                                <DropdownUser></DropdownUser>
                             </div>
                         </div>
                     </div>

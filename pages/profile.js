@@ -6,7 +6,7 @@ import RadioButton from "../components/RadioButton"
 import Conversation from "../components/Conversation"
 import ContactInfo from "../components/ContactInfo"
 
-function chat() {
+function profile() {
   const [results, setResults] = useState(false)
   
   function clickAlert(){
@@ -16,7 +16,7 @@ function chat() {
   return (
     <div>
       <Head>
-        <title>Edu | Chat</title>
+        <title>Edu | Profile</title>
         <link rel="preconnect" href="https://fonts.gstatic.com"></link>
         <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet"></link>
         <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css" />
@@ -165,4 +165,4 @@ function chat() {
   )
 }
 
-export default chat
+export default profile

@@ -25,8 +25,13 @@ module.exports = {
           DEFAULT: '#fafafa',
           dark: '#fafafa',
         },
+        c_dark: {
+          light: '#323232',
+          DEFAULT: '#323232',
+          dark: '#323232',
+        },
         c_gray: {
-          light: '#969696',
+          light: '#f4f4fc',
           DEFAULT: '#969696',
           dark: '#969696',
         },
