@@ -18,7 +18,7 @@ function sidebar({isVisible}) {
         </div>
         <ul className="nav nav-pills flex-column mb-auto">
           <li className="nav-item mb-4">
-            <a href="/" className={'nav-link py-3 pr-3 pl-10 flex leading-6 align-middle items-center ' + isActive("/")}>
+            <a href="/dashboard" className={'nav-link py-3 pr-3 pl-10 flex leading-6 align-middle items-center ' + isActive("/dashboard")}>
               <i className="bi bi-speedometer mr-4 text-2xl leading-6 text-tertiary"></i>
               <span className="inline text-base leading-4 text-tertiary">Dashboard</span>
               <p className="notif"></p>
@@ -62,7 +62,7 @@ function sidebar({isVisible}) {
             </a>
           </li>
           <li className="nav-item">
-            <a href="#" className={'nav-link py-3 pr-3 pl-10 flex leading-6 align-middle items-center ' + isActive("/logout")}>
+            <a href="/" className={'nav-link py-3 pr-3 pl-10 flex leading-6 align-middle items-center ' + isActive("/logout")}>
               <i className="bi bi-box-arrow-right mr-4 text-2xl leading-6 text-tertiary"></i>
               <span className="inline text-base leading-4 text-tertiary">Logout</span>
               <p className="notif"></p>

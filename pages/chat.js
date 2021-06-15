@@ -1,47 +1,55 @@
 import {useState} from "react"
 import Head from 'next/head'
+import PerfectScrollbar from 'react-perfect-scrollbar'
+
 import Sidebar from "../components/Sidebar"
 import Header from "../components/Header"
 import Conversation from "../components/Conversation"
 import ContactInfo from "../components/ContactInfo"
 import ContactList from "../components/ContactList"
+import FileUpload from "../components/FileUpload"
 
 function chat() {
-  const [results, setResults] = useState(false);
-  const [test, setTest] = useState();
+  const [sidebar, setSidebar] = useState(false);
+  const [upload, setUpload] = useState(false);
 
   function toggleSidebar(){
-    setResults(!results)
+    setSidebar(!sidebar)
   }
   
+  function toggleUpload(){
+    setUpload(!upload)
+  }
+
   return (
-    <div>
+    <div className="relative">
       <Head>
-        <title>Edu | Chat</title>
+        <title>EduKa | Chat</title>
         <link rel="preconnect" href="https://fonts.gstatic.com"></link>
         <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet"></link>
-        <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css" />
       </Head>
-      <Header toggleSidebar={toggleSidebar}>
+      <Header toggleSidebar={toggleSidebar} toggleUpload={toggleUpload}>
       </Header>
-      <Sidebar isVisible={results}>
+      <Sidebar isVisible={sidebar}>
       </Sidebar>
       <section id="inbox">
         <div className="inbox-container h-full">
           <div className="flex flex-wrap h-full">
             <div className="w-3/12 h-full p-0 overflow-hidden">
-              <ContactList activeItem={test}></ContactList>
+              <ContactList></ContactList>
             </div>
             <div className="flex-1 lg:w-6/12 h-full p-0 border-r-2 border-c_light" id="visible-scroll">
-              <Conversation></Conversation>
+                <Conversation></Conversation>
             </div>
             <div className="w-3/12 hidden lg:block h-full p-0 border-r-2 border-c_light">
-              <ContactInfo></ContactInfo>
+              <PerfectScrollbar>
+                <ContactInfo></ContactInfo>
+              </PerfectScrollbar>
             </div>
           </div>
         </div>
       </section>
-      <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+      <FileUpload isOpen={upload}></FileUpload>
     </div>
   )
 }

@@ -1,0 +1,29 @@
+.bg-left-side {
+  background: url("../public/img/login-background.jpg");
+  content: "";
+  z-index: -1;
+}
+
+.bg-main {
+  background: url("../public/img/login-background.jpg");
+}
+
+.swiper-slide {
+  p {
+    background: rgba(0, 0, 0, 0.466);
+  }
+}
+
+.h-line:before,
+.h-line:after {
+  content: "";
+  flex: 1 1;
+  border-bottom: 1px solid;
+  margin: auto;
+}
+.h-line:before {
+  margin-right: 10px;
+}
+.h-line:after {
+  margin-left: 10px;
+}

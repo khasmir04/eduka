@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import DropdownUser from './DropdownUser';
 import DropdownOrg from './DropdownOrg';
 
-function Header({toggleSidebar}) {
+function Header({toggleSidebar,toggleUpload}) {
      return (
         <div>
             <header id="header" className="border-b-2 border-c_light relative">
@@ -57,7 +57,7 @@ function Header({toggleSidebar}) {
                             <div className="flex items-center">
                                 <i className="bi bi-bell-fill text-lg mr-6 text-tertiary"></i>
                                 <div className="user__avatar__image mr-2">
-                                    <img className="user__avatar__img" src="/img/user-avatar.png" alt="user-avatar-img"/>
+                                    <img className="user__avatar__img cursor-pointer" src="/img/user-avatar.png" alt="user-avatar-img" onClick={toggleUpload} />
                                 </div>
                                 {/* <div className="dropdown">
                                     <i className="bi bi-chevron-down text-base leading-6 text-tertiary btn pr-0" type="button" id="dropdownUser" data-bs-toggle="dropdown" aria-expanded="false"></i>

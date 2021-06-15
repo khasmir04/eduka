@@ -3,25 +3,81 @@ import DropdownConversation from './DropdownConversation'
 import DropdownMessage from './DropdownMessage'
 
 const conversation_data = [{
-		contact: "Emila Asobi",
-		lastSeen: "recently",
-		messages: [{
-			type: "received",
-			message: "Would you like to chat about our product?",
-			time: "04:52"},{
-			type: "sent",
-			message: "let's find the right date to discuss it.",
-			time: "05:12"}
-		],
+	id: 0,
+	contact: "Emila Asobi",
+	lastSeen: "recently",
+	messages: [{
+		type: "received",
+		message: "I really like this work",
+		time: "04:52"},{
+		type: "sent",
+		message: "Last message",
+		time: "05:12"}
+	],
+	image: "/img/contact-avatar.png",
+	notif: "1",
 	},{
-		contact: "Khasmir",
-		lastSeen: "1 min ago",
-		messages: [{
-			message: "Testing message",
-			time: "12:52"},{
-			message: "It worked.",
-			time: "12:53"}
-		],
+	id: 1,
+	contact: "Khasmir",
+	lastSeen: "1 min ago",
+	messages: [{
+		message: "I really like this work",
+		time: "12:52"},{
+		message: "I really like this work",
+		time: "12:53"}
+	],
+	image: "/img/contact-avatar.png",
+	notif: "1",
+	},{
+	id: 2,
+	contact: "New User",
+	lastSeen: "1 min ago",
+	messages: [{
+		message: "Lalallalala!!",
+		time: "01:22"},{
+		message: "Can I be your friend?",
+		time: "02:44"}
+	],
+	image: "/img/contact-avatar.png",
+	notif: "1",
+	},{
+	id: 3,
+	contact: "Elon Musk",
+	lastSeen: "recently",
+	messages: [{
+		type: "received",
+		message: "I love space",
+		time: "04:52"},{
+		type: "sent",
+		message: "Last message",
+		time: "05:12"}
+	],
+	image: "/img/contact-avatar.png",
+	notif: "1",
+	},{
+	id: 4,
+	contact: "Poods",
+	lastSeen: "1 min ago",
+	messages: [{
+		message: "Edgar!",
+		time: "12:52"},{
+		message: "I really like this work",
+		time: "12:53"}
+	],
+	image: "/img/contact-avatar.png",
+	notif: "1",
+	},{
+	id: 5,
+	contact: "Jojo",
+	lastSeen: "1 min ago",
+	messages: [{
+		message: "Oraoraoraoraora",
+		time: "01:22"},{
+		message: "Oraoraoraoraora",
+		time: "02:44"}
+	],
+	image: "/img/contact-avatar.png",
+	notif: "1",
 	}
 ];
 

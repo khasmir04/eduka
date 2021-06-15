@@ -75,7 +75,7 @@ body {
 }
 
 .contacts__content {
-  height: calc(100vh - 200px);
+  height: calc(100vh - 256px);
 }
 
 .contacts__conversation.active {
@@ -140,14 +140,6 @@ body {
   width: 100%;
   height: 55px;
 }
-
-// .simplebar-track.simplebar-horizontal {
-//   display: none;
-// }
-
-// .simplebar-content {
-//   overflow-x: hidden;
-// }
 
 .media__item {
   max-width: 55px;
@@ -299,6 +291,13 @@ body {
 .show-dashboard {
   left: 0 !important;
 }
+
+.has-mask {
+  clip: rect(10px, 150px, 130px, 10px);
+}
+
+// MEDIA QUERIES
+
 // Medium
 @media (min-width: 768px) {
   .header__search > div {
