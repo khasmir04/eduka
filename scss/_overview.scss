@@ -1,0 +1,98 @@
+#overview {
+  width: 100vw;
+  margin-left: auto;
+  height: calc(100vh - 80px);
+  font-family: "Roboto", sans-serif;
+  background-color: #e5e5e5;
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.dummy-box {
+  min-height: 320px;
+}
+
+.dummy-box-1 {
+  min-height: 50px;
+}
+
+.dummy-box-3 {
+  min-height: 3000px;
+}
+
+.card-1 {
+  border: 1px solid white;
+  border-radius: 0.75rem;
+  background: #fff;
+}
+
+.summary-bg {
+  border: 1px solid white;
+  border: 1px solid rgba(10, 4, 60, 0.06);
+  border-radius: 0.75rem;
+  background: #fff;
+}
+
+.summary__icon {
+  display: inline-block;
+  background-color: rgba(142, 234, 255, 0.1);
+  padding: 0.5rem;
+  border-radius: 0.4rem;
+}
+
+.summary__icon-clock {
+  display: inline-block;
+  background-color: rgba(62, 154, 239, 0.1);
+  padding: 0.5rem;
+  border-radius: 0.4rem;
+}
+
+.summary__icon-exam {
+  display: inline-block;
+  background-color: rgba(89, 34, 141, 0.1);
+  padding: 0.5rem;
+  border-radius: 0.4rem;
+}
+
+// Utility
+
+.summary {
+  font-size: 0.8rem;
+  line-height: 1.4rem;
+  font-weight: 700;
+}
+
+.font-size-16 {
+  font-size: 1rem;
+  line-height: 1.1rem;
+  font-weight: 700;
+}
+
+.summary__span-color {
+  color: #79869f;
+  font-size: 0.7rem;
+  line-height: 0.8rem;
+}
+
+course__span-color {
+  color: #a0a0a0;
+}
+
+.btn-bg-color {
+  display: inline-block;
+  background-color: rgba(251, 90, 90, 0.2);
+  border-radius: 3.12rem;
+  padding: 0.5rem 2.18rem;
+  a {
+    color: #f26767;
+  }
+}
+
+@media (min-width: 1200px) {
+  #overview {
+    width: calc(100vw - 220px);
+  }
+}
