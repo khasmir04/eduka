@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { RadioGroup } from '@headlessui/react'
 
-export default function RadioButton() {
+export default function RadioButtonInbox() {
   let [plan, setPlan] = useState('Open')
 
   return (

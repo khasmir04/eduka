@@ -2,7 +2,7 @@ import {useState} from "react"
 import Head from 'next/head'
 import Sidebar from "../components/Sidebar"
 import Header from "../components/Header"
-import RadioButton from "../components/RadioButton"
+import RadioButtonInbox from "../components/RadioButtonInbox"
 import Conversation from "../components/Conversation"
 import ContactInfo from "../components/ContactInfo"
 
@@ -40,7 +40,7 @@ function profile() {
                     </div>
                     <i className="bi bi-plus-circle-fill btn text-primary text-xl md:text-4xl p-0 border-0 leading-4"></i>
                   </div>
-                  <RadioButton></RadioButton>
+                  <RadioButtonInbox></RadioButtonInbox>
                 </div>
                 <div className="contacts__content">
                     <a href="#" className="contacts__conversation border-t-2 border-c_light hover:bg-c_gray-light p-6 flex items-center justify-center lg:justify-between">
