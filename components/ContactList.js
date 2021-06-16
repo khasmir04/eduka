@@ -1,13 +1,13 @@
 import React from 'react'
-import RadioButtonInbox from './RadioButtonInbox'
+import RadioButtonInbox from './common/RadioButtonInbox'
 import {useState} from "react"
 import Link from 'next/link'
 import router from 'next/router'
 import PerfectScrollbar from 'react-perfect-scrollbar'
 
-const conversation_data = [{
+const contactData = [{
 	id: 0,
-	contact: "Emila Asobi",
+	name: "Emilia Asobi",
 	lastSeen: "recently",
 	messages: [{
 		type: "received",
@@ -17,11 +17,13 @@ const conversation_data = [{
 		message: "Last message",
 		time: "05:12"}
 	],
-	image: "/img/contact-avatar.png",
+	image: "/img/users/contact-avatar.jpg",
 	notif: "1",
+  title: "Nurse",
+  active: true,
 	},{
 	id: 1,
-	contact: "Khasmir",
+	name: "Khasmir",
 	lastSeen: "1 min ago",
 	messages: [{
 		message: "I really like this work",
@@ -29,11 +31,13 @@ const conversation_data = [{
 		message: "I really like this work",
 		time: "12:53"}
 	],
-	image: "/img/contact-avatar.png",
-	notif: "1",
+	image: "/img/users/contact-avatar-1.jpg",
+	notif: "3",
+  title: "Student",
+  active: true,
 	},{
 	id: 2,
-	contact: "New User",
+	name: "New User",
 	lastSeen: "1 min ago",
 	messages: [{
 		message: "Lalallalala!!",
@@ -41,11 +45,13 @@ const conversation_data = [{
 		message: "Can I be your friend?",
 		time: "02:44"}
 	],
-	image: "/img/contact-avatar.png",
-	notif: "1",
+	image: "/img/users/contact-avatar-2.jpg",
+	notif: "2",
+  title: "Student",
+  active: true,
 	},{
 	id: 3,
-	contact: "Elon Musk",
+	name: "Elon Musk",
 	lastSeen: "recently",
 	messages: [{
 		type: "received",
@@ -55,11 +61,13 @@ const conversation_data = [{
 		message: "Last message",
 		time: "05:12"}
 	],
-	image: "/img/contact-avatar.png",
+	image: "/img/users/contact-avatar-3.jpg",
 	notif: "1",
+  title: "Professor",
+  active: true,
 	},{
 	id: 4,
-	contact: "Poods",
+	name: "Poods",
 	lastSeen: "1 min ago",
 	messages: [{
 		message: "Edgar!",
@@ -67,11 +75,13 @@ const conversation_data = [{
 		message: "I really like this work",
 		time: "12:53"}
 	],
-	image: "/img/contact-avatar.png",
-	notif: "1",
+	image: "/img/users/contact-avatar-4.jpg",
+	notif: "6",
+  title: "Dean",
+  active: true,
 	},{
 	id: 5,
-	contact: "Jojo",
+	name: "Jojo",
 	lastSeen: "1 min ago",
 	messages: [{
 		message: "Oraoraoraoraora",
@@ -79,8 +89,10 @@ const conversation_data = [{
 		message: "Oraoraoraoraora",
 		time: "02:44"}
 	],
-	image: "/img/contact-avatar.png",
-	notif: "1",
+	image: "/img/users/contact-avatar-5.jpg",
+	notif: "9",
+  title: "Student",
+  active: true,
 	}
 ];
 
@@ -113,7 +125,7 @@ function ContactList() {
 			</div>
 			<PerfectScrollbar className="!h-[calc(100vh-256px)]">
 				<div className="contacts__content">
-					{conversation_data.map((convo) => (
+					{contactData.map((convo) => (
 						<div key={convo.id}>
 							<div  className={'contacts__conversation cursor-pointer border-t-2 border-c_light hover:bg-c_gray-light p-6 flex items-center justify-center lg:justify-between ' + (activeContact==convo.id ? 'active' : null)}
 							onClick={() => setItem(convo.id)}>
@@ -122,7 +134,7 @@ function ContactList() {
 									<img className="contact__avatar__img" src={convo.image} alt="contact-avatar-img"/>
 								</div>
 								<div className="contact__avatar__content hidden lg:block">
-									<h2 className="contact__avatar__name text-c_dark text-base mb-2 leading-4 font-medium">{convo.contact}</h2>
+									<h2 className="contact__avatar__name text-c_dark text-base mb-2 leading-4 font-medium">{convo.name}</h2>
 									<p className="mb-0 text-c_gray leading-4">{convo.messages.slice(-1)[0].message}</p>
 								</div>
 								</div>

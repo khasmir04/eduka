@@ -6,7 +6,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function DropdownOrg() {
+export default function DropdownUser() {
   return (
     <Menu as="div" className="relative inline-block text-left">
       {({ open }) => (
@@ -29,7 +29,7 @@ export default function DropdownOrg() {
           >
             <Menu.Items
               static
-              className="origin-top-right absolute left-0 z-10 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none"
+              className="origin-top-right absolute right-0 z-10 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none"
             >
               <div className="py-1">
                 <Menu.Item>
@@ -41,7 +41,7 @@ export default function DropdownOrg() {
                         'block px-4 py-2 text-sm'
                       )}
                     >
-                      Team UI
+                      Account settings
                     </a>
                   )}
                 </Menu.Item>
@@ -54,7 +54,7 @@ export default function DropdownOrg() {
                         'block px-4 py-2 text-sm'
                       )}
                     >
-                      Team UX
+                      Support
                     </a>
                   )}
                 </Menu.Item>
@@ -67,7 +67,20 @@ export default function DropdownOrg() {
                         'block px-4 py-2 text-sm'
                       )}
                     >
-                      Team QA
+                      License
+                    </a>
+                  )}
+                </Menu.Item>
+                <Menu.Item>
+                  {({ active }) => (
+                    <a
+                      href="/"
+                      className={classNames(
+                        active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
+                        'block px-4 py-2 text-sm'
+                      )}
+                    >
+                      Sign out
                     </a>
                   )}
                 </Menu.Item>
@@ -79,3 +92,20 @@ export default function DropdownOrg() {
     </Menu>
   )
 }
+
+// Setting focus
+// focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500 
+// for button
+{/* <Menu.Item>
+      {({ active }) => (
+        <button
+          type="submit"
+          className={classNames(
+            active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
+            'block w-full text-left px-4 py-2 text-sm'
+          )}
+        >
+          Sign out
+        </button>
+      )}
+    </Menu.Item> */}

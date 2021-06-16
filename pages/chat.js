@@ -2,19 +2,24 @@ import {useState} from "react"
 import Head from 'next/head'
 import PerfectScrollbar from 'react-perfect-scrollbar'
 
-import Sidebar from "../components/Sidebar"
-import Header from "../components/Header"
+import Sidebar from "../components/layout/Sidebar"
+import Header from "../components/layout/Header"
 import Conversation from "../components/Conversation"
 import ContactInfo from "../components/ContactInfo"
 import ContactList from "../components/ContactList"
-import FileUpload from "../components/FileUpload"
+import FileUpload from "../components/Modal/FileUpload"
 
 function chat() {
-  const [sidebar, setSidebar] = useState(false);
-  const [upload, setUpload] = useState(false);
+  const [sidebar, setSidebar] = useState(false)
+  const [contactInfo, setContactInfo] = useState(true)
+  const [upload, setUpload] = useState(false)
 
   function toggleSidebar(){
     setSidebar(!sidebar)
+  }
+
+  function toggleContactInfo(){
+    setContactInfo(!contactInfo)
   }
   
   function toggleUpload(){
@@ -39,17 +44,17 @@ function chat() {
               <ContactList></ContactList>
             </div>
             <div className="flex-1 lg:w-6/12 h-full p-0 border-r-2 border-c_light" id="visible-scroll">
-                <Conversation></Conversation>
+                <Conversation toggleContactInfo={toggleContactInfo}></Conversation>
             </div>
-            <div className="w-3/12 hidden lg:block h-full p-0 border-r-2 border-c_light">
+            <div className={'w-3/12 hidden h-full p-0 border-r-2 border-c_light ' + (contactInfo ? 'lg:block' : 'lg:hidden')}>
               <PerfectScrollbar>
-                <ContactInfo></ContactInfo>
+                <ContactInfo toggleContactInfo={toggleContactInfo}></ContactInfo>
               </PerfectScrollbar>
             </div>
           </div>
         </div>
       </section>
-      <FileUpload isOpen={upload}></FileUpload>
+      <FileUpload isOpen={upload} toggleUpload={toggleUpload}></FileUpload>
     </div>
   )
 }

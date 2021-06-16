@@ -41,6 +41,7 @@ body {
 }
 
 .logo__img {
+  object-fit: cover;
   width: 137px;
   height: 24px;
 }
@@ -55,16 +56,20 @@ body {
 }
 
 .header__avatar__img {
+  object-fit: cover;
   height: 48px;
   width: 48px;
 }
 
 .user__avatar__image {
+  border-radius: 50%;
   max-width: 40px;
   width: 100%;
 }
 
 .user__avatar__img {
+  object-fit: cover;
+  border-radius: 50%;
   height: 40px;
   width: 40px;
 }
@@ -88,16 +93,20 @@ body {
 
 .contact__avatar__image {
   max-width: 48px;
+  border-radius: 50%;
   width: 100%;
 }
 
 .contact__avatar__img {
+  object-fit: cover;
+  border-radius: 50%;
   height: 48px;
   width: 48px;
 }
 
 .contact-info__profile__image {
   max-width: 104px;
+  border-radius: 50%;
   width: 100%;
   i {
     color: $primary;
@@ -106,6 +115,8 @@ body {
 }
 
 .contact-info__profile__img {
+  border-radius: 50%;
+  object-fit: cover;
   width: 104px;
   height: 104px;
 }
@@ -119,11 +130,14 @@ body {
 }
 
 .conversation__header__image {
+  border-radius: 50%;
   width: 100%;
   max-width: 48px;
 }
 
 .conversation__header__img {
+  border-radius: 50%;
+  object-fit: cover;
   height: 48px;
   width: 48px;
 }
@@ -152,6 +166,7 @@ body {
 }
 
 .go-pro__img {
+  object-fit: cover;
   width: 238px;
   height: 190px;
 }
@@ -228,6 +243,7 @@ body {
 }
 
 .reply__img {
+  object-fit: cover;
   width: 40px;
   height: 40px;
 }
