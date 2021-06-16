@@ -4,97 +4,7 @@ import {useState} from "react"
 import Link from 'next/link'
 import router from 'next/router'
 import PerfectScrollbar from 'react-perfect-scrollbar'
-
-const contactData = [{
-	id: 0,
-	name: "Emilia Asobi",
-	lastSeen: "recently",
-	messages: [{
-		type: "received",
-		message: "I really like this work",
-		time: "04:52"},{
-		type: "sent",
-		message: "Last message",
-		time: "05:12"}
-	],
-	image: "/img/users/contact-avatar.jpg",
-	notif: "1",
-  title: "Nurse",
-  active: true,
-	},{
-	id: 1,
-	name: "Khasmir",
-	lastSeen: "1 min ago",
-	messages: [{
-		message: "I really like this work",
-		time: "12:52"},{
-		message: "I really like this work",
-		time: "12:53"}
-	],
-	image: "/img/users/contact-avatar-1.jpg",
-	notif: "3",
-  title: "Student",
-  active: true,
-	},{
-	id: 2,
-	name: "New User",
-	lastSeen: "1 min ago",
-	messages: [{
-		message: "Lalallalala!!",
-		time: "01:22"},{
-		message: "Can I be your friend?",
-		time: "02:44"}
-	],
-	image: "/img/users/contact-avatar-2.jpg",
-	notif: "2",
-  title: "Student",
-  active: true,
-	},{
-	id: 3,
-	name: "Elon Musk",
-	lastSeen: "recently",
-	messages: [{
-		type: "received",
-		message: "I love space",
-		time: "04:52"},{
-		type: "sent",
-		message: "Last message",
-		time: "05:12"}
-	],
-	image: "/img/users/contact-avatar-3.jpg",
-	notif: "1",
-  title: "Professor",
-  active: true,
-	},{
-	id: 4,
-	name: "Poods",
-	lastSeen: "1 min ago",
-	messages: [{
-		message: "Edgar!",
-		time: "12:52"},{
-		message: "I really like this work",
-		time: "12:53"}
-	],
-	image: "/img/users/contact-avatar-4.jpg",
-	notif: "6",
-  title: "Dean",
-  active: true,
-	},{
-	id: 5,
-	name: "Jojo",
-	lastSeen: "1 min ago",
-	messages: [{
-		message: "Oraoraoraoraora",
-		time: "01:22"},{
-		message: "Oraoraoraoraora",
-		time: "02:44"}
-	],
-	image: "/img/users/contact-avatar-5.jpg",
-	notif: "9",
-  title: "Student",
-  active: true,
-	}
-];
+import userData from '../pages/api/userData.json'
 
 function ContactList() {
 	let [activeContact, setActiveContact] = useState('0')
@@ -125,7 +35,7 @@ function ContactList() {
 			</div>
 			<PerfectScrollbar className="!h-[calc(100vh-256px)]">
 				<div className="contacts__content">
-					{contactData.map((convo) => (
+					{userData.map((convo) => (
 						<div key={convo.id}>
 							<div  className={'contacts__conversation cursor-pointer border-t-2 border-c_light hover:bg-c_gray-light p-6 flex items-center justify-center lg:justify-between ' + (activeContact==convo.id ? 'active' : null)}
 							onClick={() => setItem(convo.id)}>
@@ -135,7 +45,7 @@ function ContactList() {
 								</div>
 								<div className="contact__avatar__content hidden lg:block">
 									<h2 className="contact__avatar__name text-c_dark text-base mb-2 leading-4 font-medium">{convo.name}</h2>
-									<p className="mb-0 text-c_gray leading-4">{convo.messages.slice(-1)[0].message}</p>
+									<p className="mb-0 text-c_gray leading-4 overflow-hidden overflow-ellipsis whitespace-nowrap lg:max-w-[97px] xl:max-w-[120px] 2xl:max-w-[150px]">{convo.messages.slice(-1)[0].message}</p>
 								</div>
 								</div>
 								<div className="contact__time-stamp hidden lg:block">

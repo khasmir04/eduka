@@ -1,106 +1,16 @@
 import React from 'react'
 import SwiperSharedMedia from './carousel/SwiperSharedMedia'
 import { useRouter } from 'next/router';
-
-const contactData = [{
-	id: 0,
-	contact: "Emilia Asobi",
-	lastSeen: "recently",
-	messages: [{
-		type: "received",
-		message: "I really like this work",
-		time: "04:52"},{
-		type: "sent",
-		message: "Last message",
-		time: "05:12"}
-	],
-	image: "/img/users/contact-avatar.jpg",
-	notif: "1",
-  title: "Nurse",
-  active: true,
-	},{
-	id: 1,
-	contact: "Khasmir",
-	lastSeen: "1 min ago",
-	messages: [{
-		message: "I really like this work",
-		time: "12:52"},{
-		message: "I really like this work",
-		time: "12:53"}
-	],
-	image: "/img/users/contact-avatar-1.jpg",
-	notif: "1",
-  title: "Student",
-  active: true,
-	},{
-	id: 2,
-	contact: "New User",
-	lastSeen: "1 min ago",
-	messages: [{
-		message: "Lalallalala!!",
-		time: "01:22"},{
-		message: "Can I be your friend?",
-		time: "02:44"}
-	],
-	image: "/img/users/contact-avatar-2.jpg",
-	notif: "1",
-  title: "Student",
-  active: true,
-	},{
-	id: 3,
-	contact: "Elon Musk",
-	lastSeen: "recently",
-	messages: [{
-		type: "received",
-		message: "I love space",
-		time: "04:52"},{
-		type: "sent",
-		message: "Last message",
-		time: "05:12"}
-	],
-	image: "/img/users/contact-avatar-3.jpg",
-	notif: "1",
-  title: "Professor",
-  active: true,
-	},{
-	id: 4,
-	contact: "Poods",
-	lastSeen: "1 min ago",
-	messages: [{
-		message: "Edgar!",
-		time: "12:52"},{
-		message: "I really like this work",
-		time: "12:53"}
-	],
-	image: "/img/users/contact-avatar-4.jpg",
-	notif: "1",
-  title: "Dean",
-  active: true,
-	},{
-	id: 5,
-	contact: "Jojo",
-	lastSeen: "1 min ago",
-	messages: [{
-		message: "Oraoraoraoraora",
-		time: "01:22"},{
-		message: "Oraoraoraoraora",
-		time: "02:44"}
-	],
-	image: "/img/users/contact-avatar-5.jpg",
-	notif: "1",
-  title: "Student",
-  active: true,
-	}
-];
+import userData from '../pages/api/userData.json'
 
 function ContactInfo({toggleContactInfo}) {
   const router = useRouter()
   let currentId = parseInt(router.asPath.substr(11,1))
   // if(isNaN(currentId))
   //  currentId = 0
-  // let currentData = (contactData.filter(data => {return data.id == currentId}))
+  // let currentData = (userData.filter(data => {return data.id == currentId}))
 
-  let currentData = (contactData.filter(data => {return data.id == ((isNaN(currentId))? 0: currentId)}))
+  let currentData = (userData.filter(data => {return data.id == ((isNaN(currentId))? 0: currentId)}))
 
 	return (
     currentData.map(data => (

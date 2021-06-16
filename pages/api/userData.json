@@ -1,0 +1,152 @@
+[{
+	"id": 0,
+	"name": "Emilia Asobi",
+	"lastSeen": "recently",
+	"messages": [{
+		"id": 0,
+    "type": "received",
+		"message": "Konnichiwa!",
+		"time": "04:52",
+    "unixTime": 1623850206
+  },{
+		"id": 1,
+    "type": "sent",
+		"message": "I love Emilia",
+		"time": "05:12",
+    "unixTime": 1623850208
+  },{
+    "id": 2,
+    "type": "received",
+    "message": "Baka!",
+    "time": "05:12",
+    "unixTime": 1623850208
+  }],
+	"image": "/img/users/contact-avatar.jpg",
+	"notif": "1",
+  "title": "Nurse",
+  "active": true
+	},{
+	"id": 1,
+	"name": "Khasmir",
+	"lastSeen": "5 mins ago",
+	"messages": [{
+    "id": 0,
+    "type": "received",
+		"message": "I really like this work!",
+		"time": "12:52",
+    "unixTime": 1623850206
+  },{
+    "id": 1,
+    "type": "sent",
+		"message": "Are you sure about that?",
+		"time": "12:53",
+    "unixTime": 16238502010
+  },{
+    "id": 2,
+    "type": "received",
+		"message": "Hmmmm....",
+		"time": "12:53",
+    "unixTime": 16238502010
+  }],
+	"image": "/img/users/contact-avatar-1.jpg",
+	"notif": "1",
+  "title": "Student",
+  "active": true
+	},{
+	"id": 2,
+	"name": "New User",
+	"lastSeen": "1 min ago",
+	"messages": [{
+    "id": 0,
+    "type": "received",
+		"message": "Can I be your friend?",
+		"time": "01:22",
+    "unixTime": 1623850203
+  },{
+    "id": 1,
+    "type": "sent",
+		"message": "No.",
+		"time": "02:44",
+    "unixTime": 1623850206
+  },{
+    "id": 2,
+    "type": "received",
+		"message": "Okay,bye",
+		"time": "02:44",
+    "unixTime": 1623850206
+  }],
+	"image": "/img/users/contact-avatar-2.jpg",
+	"notif": "1",
+  "title": "Student",
+  "active": true
+	},{
+	"id": 3,
+	"name": "Elon Musk",
+	"lastSeen": "recently",
+	"messages": [{
+		"id": 0,
+    "type": "received",
+		"message": "I love space",
+		"time": "04:52",
+    "unixTime": 1623850201
+  },{
+		"id": 1,
+    "type": "sent",
+		"message": "Fly me to the moon",
+		"time": "05:12",
+    "unixTime": 1623850206
+  }],
+	"image": "/img/users/contact-avatar-3.jpg",
+	"notif": "1",
+  "title": "Professor",
+  "active": true
+	},{
+	"id": 4,
+	"name": "Poods",
+	"lastSeen": "an hour ago",
+	"messages": [{
+    "id": 0,
+    "type": "received",
+		"message": "Did you see Edgar?",
+		"time": "12:52",
+    "unixTime": 1623850202
+  },{
+    "id": 1,
+    "type": "sent",
+		"message": "Yes, he's with Marzia",
+		"time": "12:53",
+    "unixTime": 1623850208
+  },{
+    "id": 2,
+    "type": "received",
+		"message": "Dammit",
+		"time": "12:53",
+    "unixTime": 1623850208
+  }],
+	"image": "/img/users/contact-avatar-4.jpg",
+	"notif": "1",
+  "title": "Dean",
+  "active": true
+	},{
+	"id": 5,
+	"name": "Jojo",
+	"lastSeen": "a year ago",
+	"messages": [{
+    "id": 0,
+    "type": "sent",
+		"message": "Za Warudo! Mudamudamudamudamudamudamudamudamudamuda!",
+		"time": "01:22",
+    "unixTime": 1623850202
+  },{
+    "id": 1,
+    "type": "received",
+		"message": "Oraoraoraoraoraoraoraoraoraoraoraoraoraoraoraoraoraora!!",
+		"time": "02:44",
+    "unixTime": 1623850208
+  }],
+	"image": "/img/users/contact-avatar-5.jpg",
+	"notif": "1",
+  "title": "Student",
+  "active": true
+	}
+]
