@@ -239,11 +239,13 @@ body {
 
 .reply__image {
   max-width: 40px;
+  border-radius: 50%;
   width: 100%;
 }
 
 .reply__img {
   object-fit: cover;
+  border-radius: 50%;
   width: 40px;
   height: 40px;
 }

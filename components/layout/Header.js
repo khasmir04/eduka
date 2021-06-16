@@ -21,7 +21,7 @@ function Header({toggleSidebar,toggleUpload}) {
                 <div className="flex items-center">
                     <div>
                         <div className="flex items-center">
-                        <div id="header__avatar__image" className="header__avatar__image mr-4 lg:pointer-events-none " onClick={toggleSidebar}>
+                        <div id="header__avatar__image" className="header__avatar__image mr-4 xl:pointer-events-none " onClick={toggleSidebar}>
                             <img className="header__avatar__img" src="/img/org-avatar.png" alt="org-avatar-image"/>
                         </div>
                         <div className="hidden md:flex flex-col justify-center mr-2">
