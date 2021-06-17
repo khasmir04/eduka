@@ -1,6 +1,6 @@
 import Head from "next/head";
-import Sidebar from "../../components/Sidebar";
-import Header from "../../components/Header";
+import Sidebar from '../../components/layout/Sidebar'
+import Header from "../../components/layout/Header";
 import LineChart from "../../components/LineChart";
 
 function clickAlert() {
