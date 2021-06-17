@@ -24,7 +24,7 @@ export default function dashboard() {
   return (
     <div>
       <Head>
-        <title>EduKa | Dashboard</title>
+        <title>EduKa | Overview</title>
         <link rel="preconnect" href="https://fonts.gstatic.com"></link>
         <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet"></link>
       </Head>
