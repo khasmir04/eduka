@@ -4,7 +4,7 @@ import PerfectScrollbar from 'react-perfect-scrollbar'
 
 import Sidebar from "../components/layout/Sidebar"
 import Header from "../components/layout/Header"
-import FileUpload from "../components/Modal/FileUpload"
+import FileUpload from "../components/modal/FileUpload"
 
 function profile() {
   const [sidebar, setSidebar] = useState(false)

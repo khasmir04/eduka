@@ -7,7 +7,7 @@ import Header from "../components/layout/Header"
 import Conversation from "../components/Conversation"
 import ContactInfo from "../components/ContactInfo"
 import ContactList from "../components/ContactList"
-import FileUpload from "../components/Modal/FileUpload"
+import FileUpload from "../components/modal/FileUpload"
 
 function chat() {
   const [sidebar, setSidebar] = useState(false)

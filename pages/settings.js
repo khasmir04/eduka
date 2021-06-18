@@ -2,7 +2,7 @@ import React,{useState} from 'react'
 import Head from "next/head"
 import Header from "../components/layout/Header"
 import Sidebar from "../components/layout/Sidebar"
-import FileUpload from "../components/Modal/FileUpload"
+import FileUpload from "../components/modal/FileUpload"
 import PerfectScrollbar from 'react-perfect-scrollbar'
 
 export default function settings() {
