@@ -1,6 +1,6 @@
 import React, { useEffect , useState } from 'react'
-import DropdownConversation from './Dropdown/DropdownConversation'
-import DropdownMessage from './Dropdown/DropdownMessage'
+import DropdownConversation from './dropdown/DropdownConversation'
+import DropdownMessage from './dropdown/DropdownMessage'
 import { useRouter } from 'next/router';
 import LoaderConversation from './common/LoaderConversation'
 import Loader from 'react-loader-spinner';
