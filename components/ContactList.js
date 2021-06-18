@@ -21,15 +21,15 @@ function ContactList() {
 
 	return (
 		<div id="contacts" className="border-r-2 border-c_light">
-			<div className="contacts__header p-6">
-				<div className="contacts__header__inbox flex justify-between items-center mb-4">
+			<div className="contacts__header p-2 md:p-6">
+				<div className="contacts__header__inbox flex justify-around lg:justify-between items-center mb-4">
 					<div className="flex items-center">
 						<i className="bi bi-envelope-fill inline md:hidden text-tertiary text-2xl leading-normal"></i>
 						<p className="hidden md:block font-bold mr-2">Inbox</p>
-						<p className="notif-inbox cursor-pointer bg-tag rad rad-circle md:hidden text-secondary pe-2 ps-2 mb-0 mr-1 pt-0 pb-0 border-0 text-nowrap">4</p>
-						<p className="rounded-xl bg-red-100 p-2 hidden md:inline text-secondary pt-1 pe-2 pb-1 ps-2 mb-0 text-nowrap">4 New</p>
+						<p className="notif-inbox cursor-pointer bg-tag rad rad-circle lg:hidden text-secondary pl-2 pr-2 mb-0 mr-1 pt-0 pb-0 border-0 text-nowrap">4</p>
+						<p className="rounded-xl bg-red-100 p-2 hidden lg:inline text-secondary pt-1 pb-1 mb-0 text-nowrap">4 New</p>
 					</div>
-					<i className="bi bi-plus-circle-fill cursor-pointer text-primary text-xl md:text-4xl p-0 border-0 leading-4"></i>
+					<i className="bi bi-plus-circle-fill cursor-pointer text-primary hover:text-secondary text-xl md:text-4xl p-0 border-0 leading-4"></i>
 				</div>
 				<RadioButtonInbox></RadioButtonInbox>
 			</div>

@@ -29,20 +29,20 @@ export default function settings() {
         <link rel="preconnect" href="https://fonts.gstatic.com"></link>
         <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet"></link>
       </Head>
-      <Header toggleSidebar={toggleSidebar} toggleUpload={toggleUpload}>
+      <Header toggleSidebar={toggleSidebar}>
       </Header>
       <Sidebar isVisible={sidebar}>
       </Sidebar>
       <section id="settings">
         <PerfectScrollbar>
-          <div className="container p-6 flex flex-wrap">
+          <div className="container flex flex-wrap flex-col-reverse lg:flex-row">
             <div className="w-full lg:w-8/12 border-r-2 border-c_light">
               <div className="relative flex flex-col break-words w-full mb-6 rounded-lg bg-blueGray-100">
                 <div className="rounded-t bg-white mb-0 px-6 py-6">
                   <div className="text-center flex justify-between">
-                    <h6 className="text-c_dark text-xl font-bold">Hi Khasmir!</h6>
+                    <h6 className="text-xl font-bold my-auto text-primary">Hi Khasmir!</h6>
                     <button
-                      className="bg-primary hover:bg-primary-dark active:bg-primary-dark text-white font-bold text-xs px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 ease-linear transition-all duration-150"
+                      className="bg-primary hover:bg-secondary active:bg-secondary text-white font-bold text-sm px-4 py-2 rounded-xl shadow hover:shadow-md outline-none focus:outline-none mr-1 ease-linear transition-all duration-150"
                       type="button"
                       onClick={updateData}
                     >
@@ -50,182 +50,188 @@ export default function settings() {
                     </button>
                   </div>
                 </div>
-                <div className="flex-auto lg:px-10 py-10 pt-0">
-                  <form>
-                    <h6 className="text-c_dark text-sm mt-3 mb-6 font-bold uppercase">
-                      User Information
-                    </h6>
-                    <div className="flex flex-wrap">
-                      <div className="w-full lg:w-6/12 px-4">
-                        <div className="relative w-full mb-3">
-                          <label
-                            className="block uppercase text-c_dark text-xs font-bold mb-2"
-                            htmlFor="grid-password"
-                          >
-                            Username
-                          </label>
-                          <input
-                            type="text"
-                            className={'border-0 px-3 py-3 placeholder-blueGray-100 text-c_dark bg-white rounded text-sm focus:outline-none w-full ' + (readOnly? null : 'shadow focus:ring ease-linear transition-all duration-150')}
-                            defaultValue="khasmir04"
-                            readOnly={readOnly}
-                          />
+                <div className="flex-auto px-6 py-6 pt-0 md:pt-0 md:px-10 md:py-10">
+                  <form className="flex flex-wrap">
+                    <div className="w-full md:w-6/12 lg:w-full">
+                      <h6 className="text-c_dark text-sm mt-3 mb-6 font-bold uppercase">
+                        User Information
+                      </h6>
+                      <div className="flex flex-wrap">
+                        <div className="w-full lg:w-6/12 px-4">
+                          <div className="relative w-full mb-3">
+                            <label
+                              className="block uppercase text-c_gray text-xs font-bold mb-2"
+                              htmlFor="grid-password"
+                            >
+                              Username
+                            </label>
+                            <input
+                              type="text"
+                              className={'border px-3 py-3 placeholder-blueGray-100 text-c_dark bg-white rounded text-sm focus:outline-none w-full cursor-not-allowed ' + (readOnly? null : 'cursor-auto shadow focus:ring ease-linear transition-all duration-150')}
+                              defaultValue="khasmir04"
+                              readOnly={readOnly}
+                            />
+                          </div>
                         </div>
-                      </div>
-                      <div className="w-full lg:w-6/12 px-4">
-                        <div className="relative w-full mb-3">
-                          <label
-                            className="block uppercase text-c_dark text-xs font-bold mb-2"
-                            htmlFor="grid-password"
-                          >
-                            Email address
-                          </label>
-                          <input
-                            type="email"
-                            className={'border-0 px-3 py-3 placeholder-blueGray-100 text-c_dark bg-white rounded text-sm focus:outline-none w-full ' + (readOnly? null : 'shadow focus:ring ease-linear transition-all duration-150')}
-                            defaultValue="devkj@gmail.com"
-                            readOnly={readOnly}
-                          />
+                        <div className="w-full lg:w-6/12 px-4">
+                          <div className="relative w-full mb-3">
+                            <label
+                              className="block uppercase text-c_gray text-xs font-bold mb-2"
+                              htmlFor="grid-password"
+                            >
+                              Email address
+                            </label>
+                            <input
+                              type="email"
+                              className={'border px-3 py-3 placeholder-blueGray-100 text-c_dark bg-white rounded text-sm focus:outline-none w-full cursor-not-allowed ' + (readOnly? null : 'cursor-auto shadow focus:ring ease-linear transition-all duration-150')}
+                              defaultValue="devkj@gmail.com"
+                              readOnly={readOnly}
+                            />
+                          </div>
                         </div>
-                      </div>
-                      <div className="w-full lg:w-6/12 px-4">
-                        <div className="relative w-full mb-3">
-                          <label
-                            className="block uppercase text-c_dark text-xs font-bold mb-2"
-                            htmlFor="grid-password"
-                          >
-                            First Name
-                          </label>
-                          <input
-                            type="text"
-                            className={'border-0 px-3 py-3 placeholder-blueGray-100 text-c_dark bg-white rounded text-sm focus:outline-none w-full ' + (readOnly? null : 'shadow focus:ring ease-linear transition-all duration-150')}
-                            defaultValue="Khasmir Jhon"
-                            readOnly={readOnly}
-                          />
+                        <div className="w-full lg:w-6/12 px-4">
+                          <div className="relative w-full mb-3">
+                            <label
+                              className="block uppercase text-c_gray text-xs font-bold mb-2"
+                              htmlFor="grid-password"
+                            >
+                              First Name
+                            </label>
+                            <input
+                              type="text"
+                              className={'border px-3 py-3 placeholder-blueGray-100 text-c_dark bg-white rounded text-sm focus:outline-none w-full cursor-not-allowed ' + (readOnly? null : 'cursor-auto shadow focus:ring ease-linear transition-all duration-150')}
+                              defaultValue="Khasmir Jhon"
+                              readOnly={readOnly}
+                            />
+                          </div>
                         </div>
-                      </div>
-                      <div className="w-full lg:w-6/12 px-4">
-                        <div className="relative w-full mb-3">
-                          <label
-                            className="block uppercase text-c_dark text-xs font-bold mb-2"
-                            htmlFor="grid-password"
-                          >
-                            Last Name
-                          </label>
-                          <input
-                            type="text"
-                            className={'border-0 px-3 py-3 placeholder-blueGray-100 text-c_dark bg-white rounded text-sm focus:outline-none w-full ' + (readOnly? null : 'shadow focus:ring ease-linear transition-all duration-150')}
-                            defaultValue="Caluscusao"
-                            readOnly={readOnly}
-                          />
-                        </div>
-                      </div>
-                    </div>
-
-                    <hr className="mt-6 border-b-2 border-c_light" />
-
-                    <h6 className="text-c_dark text-sm mt-3 mb-6 font-bold uppercase">
-                      Contact Information
-                    </h6>
-                    <div className="flex flex-wrap">
-                      <div className="w-full lg:w-12/12 px-4">
-                        <div className="relative w-full mb-3">
-                          <label
-                            className="block uppercase text-c_dark text-xs font-bold mb-2"
-                            htmlFor="grid-password"
-                          >
-                            Address
-                          </label>
-                          <input
-                            type="text"
-                            className={'border-0 px-3 py-3 placeholder-blueGray-100 text-c_dark bg-white rounded text-sm focus:outline-none w-full ' + (readOnly? null : 'shadow focus:ring ease-linear transition-all duration-150')}
-                            defaultValue="Zone I-A, Aguinaldo H-way"
-                            readOnly={readOnly}
-                          />
-                        </div>
-                      </div>
-                      <div className="w-full lg:w-4/12 px-4">
-                        <div className="relative w-full mb-3">
-                          <label
-                            className="block uppercase text-c_dark text-xs font-bold mb-2"
-                            htmlFor="grid-password"
-                          >
-                            City
-                          </label>
-                          <input
-                            type="email"
-                            className={'border-0 px-3 py-3 placeholder-blueGray-100 text-c_dark bg-white rounded text-sm focus:outline-none w-full ' + (readOnly? null : 'shadow focus:ring ease-linear transition-all duration-150')}
-                            defaultValue="Dasmariñas"
-                            readOnly={readOnly}
-                          />
-                        </div>
-                      </div>
-                      <div className="w-full lg:w-4/12 px-4">
-                        <div className="relative w-full mb-3">
-                          <label
-                            className="block uppercase text-c_dark text-xs font-bold mb-2"
-                            htmlFor="grid-password"
-                          >
-                            Country
-                          </label>
-                          <input
-                            type="text"
-                            className={'border-0 px-3 py-3 placeholder-blueGray-100 text-c_dark bg-white rounded text-sm focus:outline-none w-full ' + (readOnly? null : 'shadow focus:ring ease-linear transition-all duration-150')}
-                            defaultValue="Philippines"
-                            readOnly={readOnly}
-                          />
-                        </div>
-                      </div>
-                      <div className="w-full lg:w-4/12 px-4">
-                        <div className="relative w-full mb-3">
-                          <label
-                            className="block uppercase text-c_dark text-xs font-bold mb-2"
-                            htmlFor="grid-password"
-                          >
-                            Postal Code
-                          </label>
-                          <input
-                            type="text"
-                            className={'border-0 px-3 py-3 placeholder-blueGray-100 text-c_dark bg-white rounded text-sm focus:outline-none w-full ' + (readOnly? null : 'shadow focus:ring ease-linear transition-all duration-150')}
-                            defaultValue="4114"
-                            readOnly={readOnly}
-                          />
+                        <div className="w-full lg:w-6/12 px-4">
+                          <div className="relative w-full mb-3">
+                            <label
+                              className="block uppercase text-c_gray text-xs font-bold mb-2"
+                              htmlFor="grid-password"
+                            >
+                              Last Name
+                            </label>
+                            <input
+                              type="text"
+                              className={'border px-3 py-3 placeholder-blueGray-100 text-c_dark bg-white rounded text-sm focus:outline-none w-full cursor-not-allowed ' + (readOnly? null : 'cursor-auto shadow focus:ring ease-linear transition-all duration-150')}
+                              defaultValue="Caluscusao"
+                              readOnly={readOnly}
+                            />
+                          </div>
                         </div>
                       </div>
                     </div>
 
-                    <hr className="mt-6 border-b-2 border-c_light" />
-
-                    <h6 className="text-c_dark text-sm mt-3 mb-6 font-bold uppercase">
-                      About Me
-                    </h6>
-                    <div className="flex flex-wrap">
-                      <div className="w-full lg:w-12/12 px-4">
-                        <div className="relative w-full mb-3">
-                          <textarea
-                            type="text"
-                            className={'border-0 px-3 py-3 placeholder-blueGray-100 text-c_dark bg-white rounded text-sm focus:outline-none w-full ' + (readOnly? null : 'shadow focus:ring ease-linear transition-all duration-150')}
-                            rows="4"
-                            defaultValue="I'm a Web Developer currently enrolled in KodeGo Bootcamp."
-                            readOnly={readOnly}
-                          ></textarea>
+                    <div className="w-full md:w-6/12 lg:w-full">
+                      <hr className="mt-6 border-b-2 border-c_light hidden lg:block" />
+                      <h6 className="text-c_dark text-sm mt-3 mb-6 font-bold uppercase">
+                        Contact Information
+                      </h6>
+                      <div className="flex flex-wrap">
+                        <div className="w-full lg:w-12/12 px-4">
+                          <div className="relative w-full mb-3">
+                            <label
+                              className="block uppercase text-c_gray text-xs font-bold mb-2"
+                              htmlFor="grid-password"
+                            >
+                              Address
+                            </label>
+                            <input
+                              type="text"
+                              className={'border px-3 py-3 placeholder-blueGray-100 text-c_dark bg-white rounded text-sm focus:outline-none w-full cursor-not-allowed ' + (readOnly? null : 'cursor-auto shadow focus:ring ease-linear transition-all duration-150')}
+                              defaultValue="Zone I-A, Aguinaldo H-way"
+                              readOnly={readOnly}
+                            />
+                          </div>
+                        </div>
+                        <div className="w-full lg:w-4/12 px-4">
+                          <div className="relative w-full mb-3">
+                            <label
+                              className="block uppercase text-c_gray text-xs font-bold mb-2"
+                              htmlFor="grid-password"
+                            >
+                              City
+                            </label>
+                            <input
+                              type="email"
+                              className={'border px-3 py-3 placeholder-blueGray-100 text-c_dark bg-white rounded text-sm focus:outline-none w-full cursor-not-allowed ' + (readOnly? null : 'cursor-auto shadow focus:ring ease-linear transition-all duration-150')}
+                              defaultValue="Dasmariñas"
+                              readOnly={readOnly}
+                            />
+                          </div>
+                        </div>
+                        <div className="w-full lg:w-4/12 px-4">
+                          <div className="relative w-full mb-3">
+                            <label
+                              className="block uppercase text-c_gray text-xs font-bold mb-2"
+                              htmlFor="grid-password"
+                            >
+                              Country
+                            </label>
+                            <input
+                              type="text"
+                              className={'border px-3 py-3 placeholder-blueGray-100 text-c_dark bg-white rounded text-sm focus:outline-none w-full cursor-not-allowed ' + (readOnly? null : 'cursor-auto shadow focus:ring ease-linear transition-all duration-150')}
+                              defaultValue="Philippines"
+                              readOnly={readOnly}
+                            />
+                          </div>
+                        </div>
+                        <div className="w-full lg:w-4/12 px-4">
+                          <div className="relative w-full mb-3">
+                            <label
+                              className="block uppercase text-c_gray text-xs font-bold mb-2"
+                              htmlFor="grid-password"
+                            >
+                              Postal Code
+                            </label>
+                            <input
+                              type="text"
+                              className={'border px-3 py-3 placeholder-blueGray-100 text-c_dark bg-white rounded text-sm focus:outline-none w-full cursor-not-allowed ' + (readOnly? null : 'cursor-auto shadow focus:ring ease-linear transition-all duration-150')}
+                              defaultValue="4114"
+                              readOnly={readOnly}
+                            />
+                          </div>
                         </div>
                       </div>
                     </div>
+
+                    <div className="w-full">
+                      <hr className="mt-6 border-b-2 border-c_light" />
+                      <h6 className="text-c_dark text-sm mt-3 mb-6 font-bold uppercase">
+                        About Me
+                      </h6>
+                      <div className="flex flex-wrap">
+                        <div className="w-full lg:w-12/12 px-4">
+                          <div className="relative w-full mb-3">
+                            <textarea
+                              type="text"
+                              className={'border px-3 py-3 placeholder-blueGray-100 text-c_dark bg-white rounded text-sm focus:outline-none w-full cursor-not-allowed ' + (readOnly? null : 'cursor-auto shadow focus:ring ease-linear transition-all duration-150')}
+                              rows="4"
+                              defaultValue="I'm a Web Developer currently enrolled in KodeGo Bootcamp."
+                              readOnly={readOnly}
+                            ></textarea>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
                   </form>
                 </div>
               </div>
             </div>
             <div className="w-full lg:w-4/12">
             <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 rounded-lg">
-              <div className="px-6">
+              <div className="p-6">
                 <div className="flex flex-wrap justify-center">
                   <div className="w-full px-4 flex justify-center mb-5">
                     <div className="max-w-[150px] w-full rounded-full">
                       <img
                         alt="profile-image"
                         src="/img/users/contact-avatar-1.jpg"
-                        className="rounded-full w-[150px] h-[150px] object-cover align-middle border-2 border-c_light"
+                        className="rounded-full w-[150px] h-[150px] object-cover align-middle border-2 border-c_light cursor-pointer opacity-100 hover:opacity-75"
+                        onClick={toggleUpload}
                       />
                     </div>
                   </div>
@@ -245,9 +251,9 @@ export default function settings() {
                       </div>
                       <div className="lg:mr-4 p-3 text-center">
                         <span className="text-xl font-bold block uppercase tracking-wide text-secondary">
-                          89
+                          4
                         </span>
-                        <span className="text-sm text-c_dark">Comments</span>
+                        <span className="text-sm text-c_dark">Level</span>
                       </div>
                     </div>
                   </div>
@@ -276,7 +282,7 @@ export default function settings() {
                         I'm a Web Developer currently enrolled in KodeGo Bootcamp.
                       </p>
                       <a
-                        href="#pablo"
+                        href="#"
                         className="font-normal text-lightBlue-500"
                         onClick={(e) => e.preventDefault()}
                       >

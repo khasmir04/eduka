@@ -4,19 +4,13 @@ import PerfectScrollbar from 'react-perfect-scrollbar'
 
 import Sidebar from "../components/layout/Sidebar"
 import Header from "../components/layout/Header"
-import FileUpload from "../components/modal/FileUpload"
 import LineChart from "../components/chart/LineChart"
 
 function overview() {
   const [sidebar, setSidebar] = useState(false)
-  const [upload, setUpload] = useState(false)
 
   function toggleSidebar(){
     setSidebar(!sidebar)
-  }
-  
-  function toggleUpload(){
-    setUpload(!upload)
   }
 
   return (
@@ -26,7 +20,7 @@ function overview() {
         <link rel="preconnect" href="https://fonts.gstatic.com"></link>
         <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet"></link>
       </Head>
-      <Header toggleSidebar={toggleSidebar} toggleUpload={toggleUpload}>
+      <Header toggleSidebar={toggleSidebar}>
       </Header>
       <Sidebar isVisible={sidebar}>
       </Sidebar>
@@ -560,7 +554,6 @@ function overview() {
           </div>
         </div>
       </section>
-      <FileUpload isOpen={upload} toggleUpload={toggleUpload}></FileUpload>
     </div>
   );
 }

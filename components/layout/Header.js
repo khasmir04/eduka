@@ -12,17 +12,17 @@ const userInfo = [{
   }]
 }]
 
-function Header({toggleSidebar,toggleUpload}) {
+function Header({toggleSidebar}) {
   return (
     userInfo.map((data) => (
       <div key={data.id}>
-        <header id="header" className="border-b-2 border-c_light relative">
-            <div className="container-fluid header-container p-4">
+        <header id="header" className="relative">
+            <div className="container-fluid header-container bg-white border-b-2 border-c_light p-4">
                 <div className="flex items-center">
                     <div>
                         <div className="flex items-center">
-                        <div id="header__avatar__image" className="header__avatar__image mr-4 xl:pointer-events-none " onClick={toggleSidebar}>
-                            <img className="header__avatar__img" src="/img/org-avatar.png" alt="org-avatar-image"/>
+                        <div id="header__avatar__image" className="header__avatar__image mr-4 cursor-pointer xl:cursor-auto xl:pointer-events-none " onClick={toggleSidebar}>
+                            <img className="header__avatar__img rounded-xl" src="/img/org-avatar.png" alt="org-avatar-image"/>
                         </div>
                         <div className="hidden md:flex flex-col justify-center mr-2">
                             <h2 className="m-0 text-base font-medium ">{data.org.map(n=> n.name)}</h2>
@@ -48,9 +48,9 @@ function Header({toggleSidebar,toggleUpload}) {
 
                     <div className="flex justify-end ms-auto">
                         <div className="flex items-center">
-                            <i className="bi bi-bell-fill text-lg mr-6 text-tertiary"></i>
+                            <i className="bi bi-bell-fill text-lg mr-6 text-tertiary hover:text-primary cursor-pointer"></i>
                             <div className="user__avatar__image mr-2">
-                                <img className="user__avatar__img cursor-pointer" src={data.image} alt="user-avatar-img" onClick={toggleUpload} />
+                                <img className="user__avatar__img" src={data.image} alt="user-avatar-img"/>
                             </div>
                             <DropdownUser></DropdownUser>
                         </div>

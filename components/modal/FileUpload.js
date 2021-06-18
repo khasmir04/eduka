@@ -15,7 +15,7 @@ function FileUpload({isOpen,toggleUpload}) {
                     <form className="mt-8 space-y-3" action="#" method="POST">
                     <div className="grid grid-cols-1 space-y-2">
                         <label className="text-sm font-bold text-gray-700 tracking-wide">Title</label>
-                        <input className="text-base p-2 border border-gray-300 rounded-lg focus:outline-none focus:border-indigo-500" type="email" placeholder="mail@gmail.com" defaultValue="mail@gmail.com" />
+                        <input className="text-base p-2 border border-gray-300 rounded-lg focus:outline-none focus:border-indigo-500" type="email" placeholder="Ex. my-photo"/>
                     </div>
                     <div className="grid grid-cols-1 space-y-2">
                         <label className="text-sm font-bold text-gray-700 tracking-wide">Attach Document</label>

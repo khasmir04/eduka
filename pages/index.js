@@ -51,12 +51,12 @@ function login() {
           <div className="mt-12">
             <form>
               <div>
-                <div className="text-sm font-bold text-gray-700 tracking-wide">Email Address</div>
-                <input className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-lg shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150" type="text" placeholder="khaz@gmail.com" onChange={(event) => setName(event.target.value)} />
+                <div className="text-sm font-bold text-gray-700 tracking-wide mb-2">Email Address</div>
+                <input className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150" type="text" placeholder="khaz@gmail.com" onChange={(event) => setName(event.target.value)} />
               </div>
               <div className="mt-8">
                 <div className="flex justify-between items-center">
-                  <div className="text-sm font-bold text-gray-700 tracking-wide">
+                  <div className="text-sm font-bold text-gray-700 tracking-wide mb-2">
                     Password
                   </div>
                   <div>
@@ -65,7 +65,7 @@ function login() {
                     </a>
                   </div>
                 </div>
-                <input className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-lg shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150" type="password" placeholder="Enter your password" onChange={(event) => setPassword(event.target.value)} />
+                <input className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150" type="password" placeholder="Enter your password" onChange={(event) => setPassword(event.target.value)} />
               </div>
               <div className="mt-10">
               {/* <Link href="/dashboard" onClick={e => (!name || !password) ? e.preventDefault() : null}>

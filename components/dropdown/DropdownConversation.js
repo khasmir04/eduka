@@ -12,8 +12,8 @@ export default function DropdownConversation() {
       {({ open }) => (
         <>
           <div>
-            <Menu.Button className="inline-flex justify-center w-full bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none">
-            <i className="bi bi-three-dots text-tertiary flex items-center justify-center text-base border rounded-full square" type="button" id="dropdownChat" data-bs-toggle="dropdown" aria-expanded="false" />
+            <Menu.Button className="inline-flex justify-center w-full bg-white text-sm font-medium text-gray-700 focus:outline-none">
+            <i className="bi bi-three-dots text-tertiary flex items-center justify-center text-base border rounded-full square hover:bg-primary hover:text-white" type="button" id="dropdownChat" data-bs-toggle="dropdown" aria-expanded="false" />
             </Menu.Button>
           </div>
 

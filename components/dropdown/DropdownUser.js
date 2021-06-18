@@ -13,7 +13,7 @@ export default function DropdownUser() {
         <>
           <div>
             <Menu.Button className="inline-flex justify-center w-full bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none">
-              <ChevronDownIcon className="h-5 w-5 text-c_gray" aria-hidden="true" />
+              <ChevronDownIcon className="h-5 w-5 text-c_gray hover:text-primary" aria-hidden="true" />
             </Menu.Button>
           </div>
 

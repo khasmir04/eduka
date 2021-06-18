@@ -28,11 +28,11 @@ function Conversation({toggleContactInfo}) {
           </div>
           <div>
           <h2 className="m-0 text-base text-c_dark font-medium">{data.name}</h2>
-          <p className="m-0 text-base text-c_gray">{'Last seen ' + data.lastSeen}</p>
+          <p className="m-0 text-sm md:text-base text-c_gray">{'Last seen ' + data.lastSeen}</p>
           </div>
         </div>
         <div className="flex items-center">
-          <i className="bi bi-info-circle text-tertiary mr-2 cursor-pointer" onClick={toggleContactInfo}></i>
+          <i className="bi bi-info-circle text-tertiary hover:text-primary mr-2 cursor-pointer hidden lg:inline" onClick={toggleContactInfo}></i>
           <DropdownConversation></DropdownConversation>
         </div>
         </div>
@@ -104,7 +104,7 @@ function Conversation({toggleContactInfo}) {
           </div>
           <div className="w-2/12 input__send flex justify-end items-center">
             <DropdownMessage></DropdownMessage>
-            <i className="bi bi-arrow-right-circle-fill btn text-2xl text-primary pr-4" />
+            <i className="bi bi-arrow-right-circle-fill btn text-2xl text-primary pr-4 cursor-pointer" />
           </div>
         </div>
 		  </div>

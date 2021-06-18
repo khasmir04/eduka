@@ -3,7 +3,7 @@ import SwiperSharedMedia from './carousel/SwiperSharedMedia'
 import { useRouter } from 'next/router';
 import userData from '../pages/api/userData.json'
 
-function ContactInfo({toggleContactInfo}) {
+function ContactInfo({toggleContactInfo,toggleImage}) {
   const router = useRouter()
   let currentId = parseInt(router.asPath.substr(11,1))
   // if(isNaN(currentId))
@@ -18,10 +18,10 @@ function ContactInfo({toggleContactInfo}) {
       <div className="contact-info__profile mb-10">
         <div className="contact-info__options flex justify-between items-center">
           <a className="cursor-pointer p-0" href="#">
-            <i className="bi bi-gear-fill text-tertiary" />
+            <i className="bi bi-gear-fill text-tertiary hover:text-primary" />
           </a>
           <a className="cursor-pointer p-0" href="#" onClick={toggleContactInfo}>
-            <i className="bi bi-x-circle-fill text-tertiary" />
+            <i className="bi bi-x-circle-fill text-tertiary hover:text-primary" />
           </a>
         </div>
         <div className="text-center">
@@ -40,7 +40,7 @@ function ContactInfo({toggleContactInfo}) {
         </div>
         <div>
           <div className="swiper-container">
-            <SwiperSharedMedia></SwiperSharedMedia>
+            <SwiperSharedMedia toggleImage={toggleImage}></SwiperSharedMedia>
           </div>
         </div>
       </div>
@@ -88,11 +88,11 @@ function ContactInfo({toggleContactInfo}) {
           </a>
         </div>
       </div>
-      <div className="contact-info__ad flex justify-center items-center mt-1">
+      {/* <div className="contact-info__ad flex justify-center items-center mt-1">
         <div className="go-pro__image">
           <img className="go-pro__img" src="./img/go-pro.png" alt="go-pro image" />
         </div>
-      </div>
+      </div> */}
     </div>
     ))
 	)

@@ -8,14 +8,9 @@ import FileUpload from "../components/modal/FileUpload"
 
 function profile() {
   const [sidebar, setSidebar] = useState(false)
-  const [upload, setUpload] = useState(false)
 
   function toggleSidebar(){
     setSidebar(!sidebar)
-  }
-  
-  function toggleUpload(){
-    setUpload(!upload)
   }
 
   return (
@@ -25,7 +20,7 @@ function profile() {
         <link rel="preconnect" href="https://fonts.gstatic.com"></link>
         <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet"></link>
       </Head>
-      <Header toggleSidebar={toggleSidebar} toggleUpload={toggleUpload}>
+      <Header toggleSidebar={toggleSidebar}>
       </Header>
       <Sidebar isVisible={sidebar}>
       </Sidebar>
@@ -299,7 +294,6 @@ function profile() {
           </div>
         </div>
       </section>
-      <FileUpload isOpen={upload} toggleUpload={toggleUpload}></FileUpload>
     </div>
   );
 }
