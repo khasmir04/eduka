@@ -1,0 +1,88 @@
+#overview {
+  width: 100vw;
+  margin-left: auto;
+  height: calc(100vh - 80px);
+  font-family: "Roboto", sans-serif;
+  background-color: #e5e5e5;
+}
+
+.bg-color_span {
+  padding: 0.2rem 0.5rem;
+  border-radius: 2.8rem;
+}
+
+.dummy-box {
+  min-height: 320px;
+}
+
+.dummy-box-1 {
+  min-height: 50px;
+}
+
+.dummy-box-3 {
+  min-height: 3000px;
+}
+
+.card-1 {
+  border-radius: 0.75rem;
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.summary-bg {
+  border: 1px solid rgba(10, 4, 60, 0.06);
+  border-radius: 0.75rem;
+  background: #fff;
+}
+
+.summary__icon {
+  display: inline-block;
+  background-color: rgba(142, 234, 255, 0.1);
+  padding: 0.5rem;
+  border-radius: 0.4rem;
+}
+
+.summary__icon-clock {
+  display: inline-block;
+  background-color: rgba(62, 154, 239, 0.1);
+  padding: 0.5rem;
+  border-radius: 0.4rem;
+}
+
+.summary__icon-exam {
+  display: inline-block;
+  background-color: rgba(89, 34, 141, 0.1);
+  padding: 0.5rem;
+  border-radius: 0.4rem;
+}
+
+// Utility
+
+.btn-bg-color {
+  display: inline-block;
+  background-color: rgba(251, 90, 90, 0.2);
+  border-radius: 3.12rem;
+  padding: 0.5rem 2.18rem;
+  a {
+    color: #f26767;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+}
+
+.btn-bg-color-2 {
+  display: inline-block;
+  background-color: rgba(100, 215, 215, 0.2);
+  border-radius: 3.12rem;
+  padding: 0.5rem 1.75rem;
+  a {
+    color: rgba(100, 215, 215, 1);
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  #overview {
+    width: calc(100vw - 220px);
+  }
+}

@@ -24,6 +24,12 @@ body {
   height: calc(100vh - 80px);
 }
 
+#settings {
+  width: 100vw;
+  margin-left: auto;
+  height: calc(100vh - 80px);
+}
+
 #contacts {
   height: 100%;
 }
@@ -338,6 +344,9 @@ body {
     transition: 0.25s;
   }
   #inbox {
+    width: calc(100vw - 220px);
+  }
+  #settings {
     width: calc(100vw - 220px);
   }
 }
