@@ -281,13 +281,13 @@ export default function settings() {
                       <p className="mb-4 text-lg leading-relaxed text-c_dark">
                         I'm a Web Developer currently enrolled in KodeGo Bootcamp.
                       </p>
-                      <a
+                      {/* <a
                         href="#"
                         className="font-normal text-lightBlue-500"
                         onClick={(e) => e.preventDefault()}
                       >
                         Show more
-                      </a>
+                      </a> */}
                     </div>
                   </div>
                 </div>

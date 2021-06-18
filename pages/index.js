@@ -46,12 +46,12 @@ function login() {
             <div className="text-2xl text-primary tracking-wide ml-2 font-semibold">EduKa</div>
           </div>
         </div>
-        <div className="mt-10 px-12 sm:px-24 md:px-48 lg:px-12 lg:mt-16 xl:px-24 xl:max-w-2xl">
-          <h2 className="text-center text-4xl text-primary font-display font-semibold lg:text-left xl:text-5xl xl:text-bold">Sign In</h2>
+        <div className="mt-10 md:mt-32 px-12 sm:px-24 md:px-48 lg:px-12 lg:mt-16 xl:px-24 xl:max-w-2xl">
+          <h2 className="text-center text-4xl text-primary font-display font-semibold lg:text-left xl:text-5xl xl:text-bold">Back to School!</h2>
           <div className="mt-12">
             <form>
               <div>
-                <div className="text-sm font-bold text-gray-700 tracking-wide mb-2">Email Address</div>
+                <div className="text-sm font-bold text-gray-700 tracking-wide mb-2">Email</div>
                 <input className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150" type="text" placeholder="khaz@gmail.com" onChange={(event) => setName(event.target.value)} />
               </div>
               <div className="mt-8">

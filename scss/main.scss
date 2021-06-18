@@ -1,6 +1,16 @@
 @import "tailwindcss/tailwind.css";
 @import "bootstrap-icons/font/bootstrap-icons.css";
+
 @import "swiper/swiper.scss";
+@import "swiper/swiper.min.css";
+@import "swiper/components/navigation/navigation.min.css";
+
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+
+@import "filepond/dist/filepond.min.css";
+@import "filepond-plugin-image-preview/dist/filepond-plugin-image-preview.css";
+
 @import "react-perfect-scrollbar/dist/css/styles.css";
 @import "./variables";
 @import "./custom";
