@@ -18,7 +18,7 @@ function sidebar({isVisible}) {
         </div>
         <ul className="nav nav-pills flex-column mb-auto">
           <li className="nav-item mb-4">
-            <a href="/dashboard" className={'nav-link text-tertiary hover:text-primary hover:!bg-[#f1f3f] py-3 pr-3 pl-10 flex leading-6 align-middle items-center ' + isActive("/dashboard")}>
+            <a href="/overview" className={'nav-link text-tertiary hover:text-primary hover:!bg-[#f1f3f] py-3 pr-3 pl-10 flex leading-6 align-middle items-center ' + isActive("/overview")}>
               <i className="bi bi-speedometer mr-4 text-2xl leading-6"></i>
               <span className="inline text-base leading-4 hover:text-primary">Dashboard</span>
               <p className="notif"></p>

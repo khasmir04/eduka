@@ -7,7 +7,7 @@ function login() {
 	const [password, setPassword] = useState()
 
 	const router = useRouter()
-	const href = "/dashboard"
+	const href = "/overview"
 
 	const proceedToDashboard = (e) => {
 		e.preventDefault()

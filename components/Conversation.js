@@ -15,7 +15,7 @@ function Conversation({toggleContactInfo}) {
 
   useEffect(() => { 
     setLoading(true)
-    setTimeout(()=>setLoading(false),2000)
+    setTimeout(()=>setLoading(false),1500)
   }, [currentId])
 
 	return (
@@ -44,7 +44,7 @@ function Conversation({toggleContactInfo}) {
             color="#fb2b76"
             height={100}
             width={100}
-            timeout={2000} 
+            timeout={1500} 
           /> 
           </div>
           : 
