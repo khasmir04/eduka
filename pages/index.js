@@ -9,13 +9,17 @@ function login() {
 	const router = useRouter()
 	const href = "/dashboard"
 
-	const proceedToLogin = (e) => {
+	const proceedToDashboard = (e) => {
 		e.preventDefault()
 		if(name=="devkj@gmail.com" && password=="devkim"){
 			router.push(href)
 		} else {
       alert("Log In Failed. Please check username and password.")
     }
+  }
+
+  const proceedToRecovery = (e) => {
+		router.push("/auth/recovery")
   }
 
   return (
@@ -48,7 +52,7 @@ function login() {
             <form>
               <div>
                 <div className="text-sm font-bold text-gray-700 tracking-wide">Email Address</div>
-                <input className="w-full text-lg py-2 border-b border-gray-300 focus:outline-none focus:border-indigo-500" type="text" placeholder="khaz@gmail.com" onChange={(event) => setName(event.target.value)} />
+                <input className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-lg shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150" type="text" placeholder="khaz@gmail.com" onChange={(event) => setName(event.target.value)} />
               </div>
               <div className="mt-8">
                 <div className="flex justify-between items-center">
@@ -56,24 +60,24 @@ function login() {
                     Password
                   </div>
                   <div>
-                    <a className="text-xs font-display font-semibold text-indigo-600 hover:text-indigo-800 cursor-pointer">
+                    <a className="text-xs font-display font-semibold text-indigo-600 hover:text-indigo-800 cursor-pointer" onClick={proceedToRecovery}>
                       Forgot Password?
                     </a>
                   </div>
                 </div>
-                <input className="w-full text-lg py-2 border-b border-gray-300 focus:outline-none focus:border-indigo-500" type="password" placeholder="Enter your password" onChange={(event) => setPassword(event.target.value)} />
+                <input className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-lg shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150" type="password" placeholder="Enter your password" onChange={(event) => setPassword(event.target.value)} />
               </div>
               <div className="mt-10">
               {/* <Link href="/dashboard" onClick={e => (!name || !password) ? e.preventDefault() : null}>
                 <button className="bg-secondary text-gray-100 p-4 w-full rounded-full tracking-wide font-semibold font-display focus:outline-none focus:shadow-outline hover:bg-pink-600 shadow-lg" type="submit">Log In</button>
               </Link> */}
-              <div onClick={proceedToLogin}>
+              <div onClick={proceedToDashboard}>
                 <button className="bg-secondary text-gray-100 p-4 w-full rounded-full tracking-wide font-semibold font-display focus:outline-none focus:shadow-outline hover:bg-pink-600 shadow-lg" type="submit">Log In</button>
               </div>
               </div>
             </form>
             <div className="mt-12 text-sm font-display font-semibold text-gray-700 text-center">
-              Don't have an account ? <a className="cursor-pointer text-indigo-600 hover:text-indigo-800">Sign up</a>
+              Don't have an account ? <a href="/auth/register" className="cursor-pointer text-indigo-600 hover:text-indigo-800">Sign up</a>
             </div>
           </div>
         </div>
