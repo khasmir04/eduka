@@ -6,7 +6,7 @@ import Sidebar from "../components/layout/Sidebar"
 import Header from "../components/layout/Header"
 import FileUpload from "../components/modal/FileUpload"
 
-function profile() {
+function subjects() {
   const [sidebar, setSidebar] = useState(false)
 
   function toggleSidebar(){
@@ -16,7 +16,7 @@ function profile() {
   return (
     <div>
       <Head>
-        <title>EduKa | Profile</title>
+        <title>EduKa | Subjects</title>
         <link rel="preconnect" href="https://fonts.gstatic.com"></link>
         <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet"></link>
       </Head>
@@ -298,4 +298,4 @@ function profile() {
   );
 }
 
-export default profile;
+export default subjects;

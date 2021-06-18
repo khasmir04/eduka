@@ -56,7 +56,7 @@ function ContactInfo({toggleContactInfo,toggleImage}) {
             </div>
             <div className="shared-link__item__content w-full">
               <div className="flex justify-between">
-                <p className="shared-link__item__name text-c_dark text-base mb-2 leading-4">UI-Kit Download</p>
+                <p className="shared-link__item__name text-c_dark text-base mb-2 leading-4">Homework.docx</p>
                 <p className="mb-2 text-base text-c_gray leading-4">12:24</p>
               </div>
               <p className="mb-0 text-c_gray leading-4">https://drinnnle.com/shots...</p>
@@ -68,7 +68,7 @@ function ContactInfo({toggleContactInfo,toggleImage}) {
             </div>
             <div className="shared-link__item__content w-full">
               <div className="flex justify-between">
-                <p className="shared-link__item__name text-c_dark text-base mb-2 leading-4">UI-Kit Download</p>
+                <p className="shared-link__item__name text-c_dark text-base mb-2 leading-4">Project.ppt</p>
                 <p className="mb-2 text-base text-c_gray leading-4">12:24</p>
               </div>
               <p className="mb-0 text-c_gray leading-4">https://drinnnle.com/shots...</p>
@@ -80,7 +80,7 @@ function ContactInfo({toggleContactInfo,toggleImage}) {
             </div>
             <div className="shared-link__item__content w-full">
               <div className="flex justify-between">
-                <p className="shared-link__item__name text-c_dark text-base mb-2 leading-4">UI-Kit Download</p>
+                <p className="shared-link__item__name text-c_dark text-base mb-2 leading-4">Tutorial.mp4</p>
                 <p className="mb-2 text-base text-c_gray leading-4">12:24</p>
               </div>
               <p className="mb-0 text-c_gray leading-4">https://drinnnle.com/shots...</p>
