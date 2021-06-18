@@ -55,9 +55,9 @@ function sidebar({isVisible}) {
         </ul>
         <ul className="nav nav-pills flex-column mt-auto pb-10">
           <li className="nav-item mb-4">
-            <a href="/settings" className={'nav-link text-tertiary hover:text-primary hover:!bg-[#f1f3f] py-3 pr-3 pl-10 flex leading-6 align-middle items-center ' + isActive("/setting")}>
+            <a href="/settings" className={'nav-link text-tertiary hover:text-primary hover:!bg-[#f1f3f] py-3 pr-3 pl-10 flex leading-6 align-middle items-center ' + isActive("/settings")}>
               <i className="bi bi-gear-fill mr-4 text-2xl leading-6"></i>
-              <span className="inline text-base leading-4 hover:text-primary">Setting</span>
+              <span className="inline text-base leading-4 hover:text-primary">Settings</span>
               <p className="notif"></p>
             </a>
           </li>

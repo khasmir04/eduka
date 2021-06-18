@@ -122,7 +122,7 @@ export default function settings() {
                       </div>
                     </div>
 
-                    <hr className="mt-6 border-b-1 border-c_dark" />
+                    <hr className="mt-6 border-b-2 border-c_light" />
 
                     <h6 className="text-c_dark text-sm mt-3 mb-6 font-bold uppercase">
                       Contact Information
@@ -194,7 +194,7 @@ export default function settings() {
                       </div>
                     </div>
 
-                    <hr className="mt-6 border-b-1 border-c_dark" />
+                    <hr className="mt-6 border-b-2 border-c_light" />
 
                     <h6 className="text-c_dark text-sm mt-3 mb-6 font-bold uppercase">
                       About Me
@@ -206,8 +206,7 @@ export default function settings() {
                             type="text"
                             className={'border-0 px-3 py-3 placeholder-blueGray-100 text-c_dark bg-white rounded text-sm focus:outline-none w-full ' + (readOnly? null : 'shadow focus:ring ease-linear transition-all duration-150')}
                             rows="4"
-                            defaultValue="A beautiful UI Kit and Admin for NextJS & Tailwind CSS. It is Free
-                            and Open Source."
+                            defaultValue="I'm a Web Developer currently enrolled in KodeGo Bootcamp."
                             readOnly={readOnly}
                           ></textarea>
                         </div>
@@ -233,19 +232,19 @@ export default function settings() {
                   <div className="w-full px-4 text-center">
                     <div className="flex justify-center py-4 lg:pt-4 pt-8">
                       <div className="mr-4 p-3 text-center">
-                        <span className="text-xl font-bold block uppercase tracking-wide text-c_dark">
+                        <span className="text-xl font-bold block uppercase tracking-wide text-secondary">
                           22
                         </span>
                         <span className="text-sm text-c_dark">Friends</span>
                       </div>
                       <div className="mr-4 p-3 text-center">
-                        <span className="text-xl font-bold block uppercase tracking-wide text-c_dark">
+                        <span className="text-xl font-bold block uppercase tracking-wide text-secondary">
                           10
                         </span>
-                        <span className="text-sm text-c_dark">Photos</span>
+                        <span className="text-sm text-c_dark">Awards</span>
                       </div>
                       <div className="lg:mr-4 p-3 text-center">
-                        <span className="text-xl font-bold block uppercase tracking-wide text-c_dark">
+                        <span className="text-xl font-bold block uppercase tracking-wide text-secondary">
                           89
                         </span>
                         <span className="text-sm text-c_dark">Comments</span>
@@ -257,20 +256,20 @@ export default function settings() {
                   <h3 className="text-xl font-semibold leading-normal mb-2 text-c_dark mb-2">
                     Khasmir Jhon Caluscusao
                   </h3>
-                  <div className="text-sm leading-normal mt-0 mb-2 text-c_dark font-bold uppercase">
-                    <i className="bi bi-geo-alt-fill mr-2 text-lg text-c_dark"></i>{" "}
+                  <div className="text-sm leading-normal mt-0 mb-2 text-c_gray font-bold uppercase">
+                    <i className="bi bi-geo-alt-fill mr-2 text-lg text-c_gray"></i>{" "}
                     Dasmariñas, Cavite
                   </div>
-                  <div className="mb-2 text-c_dark mb-2">
-                    <i className="bi bi-briefcase-fill mr-2 text-lg text-c_dark"></i>
+                  <div className="mb-2 text-c_gray mb-2">
+                    <i className="bi bi-briefcase-fill mr-2 text-lg text-c_gray"></i>
                     Student
                   </div>
-                  <div className="mb-2 text-c_dark">
-                    <i className="bi bi-building mr-2 text-lg text-c_dark"></i>
+                  <div className="mb-2 text-c_gray">
+                    <i className="bi bi-building mr-2 text-lg text-c_gray"></i>
                     De La Salle University - Dasmariñas
                   </div>
                 </div>
-                <div className="mt-10 py-10 border-t border-c_dark text-center">
+                <div className="mt-10 py-10 border-t-2 border-c_light text-center">
                   <div className="flex flex-wrap justify-center">
                     <div className="w-full lg:w-9/12 px-4">
                       <p className="mb-4 text-lg leading-relaxed text-c_dark">
