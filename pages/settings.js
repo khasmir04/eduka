@@ -99,7 +99,7 @@ export default function settings() {
                           <input
                             type="text"
                             className={'border-0 px-3 py-3 placeholder-blueGray-100 text-c_dark bg-white rounded text-sm focus:outline-none w-full ' + (readOnly? null : 'shadow focus:ring ease-linear transition-all duration-150')}
-                            defaultValue="Khasmir"
+                            defaultValue="Khasmir Jhon"
                             readOnly={readOnly}
                           />
                         </div>
