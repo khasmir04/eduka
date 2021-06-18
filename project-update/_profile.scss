@@ -1,0 +1,11 @@
+#profile {
+  width: 100vw;
+  margin-left: auto;
+  height: calc(100vh - 80px);
+}
+
+@media (min-width: 1200px) {
+  #profile {
+    width: calc(100vw - 220px);
+  }
+}

@@ -1,9 +1,0 @@
-#overview {
-  width: 100vw;
-  margin-left: auto;
-  height: calc(100vh - 80px);
-}
-
-h1 {
-  font-size: 5rem;
-}

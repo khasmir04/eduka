@@ -18,7 +18,20 @@ body {
   transition: 0.25s;
 }
 
+#overview {
+  width: 100vw;
+  margin-left: auto;
+  height: calc(100vh - 80px);
+  background-color: #e5e5e5;
+}
+
 #inbox {
+  width: 100vw;
+  margin-left: auto;
+  height: calc(100vh - 80px);
+}
+
+#profile {
   width: 100vw;
   margin-left: auto;
   height: calc(100vh - 80px);
@@ -54,6 +67,7 @@ body {
 
 .header__search > div {
   min-width: 50px;
+  max-width: 100px;
 }
 
 .header__avatar__image {
@@ -320,6 +334,21 @@ body {
   clip: rect(10px, 150px, 130px, 10px);
 }
 
+.fadeintop {
+  animation: fadeintop 700ms;
+}
+
+@keyframes fadeintop {
+  from {
+    opacity: 0;
+    transform: translateY(-3rem);
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
 // MEDIA QUERIES
 
 // Medium
@@ -343,7 +372,13 @@ body {
     left: 0;
     transition: 0.25s;
   }
+  #overview {
+    width: calc(100vw - 220px);
+  }
   #inbox {
+    width: calc(100vw - 220px);
+  }
+  #profile {
     width: calc(100vw - 220px);
   }
   #settings {
