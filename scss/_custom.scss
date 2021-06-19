@@ -37,6 +37,12 @@ body {
   height: calc(100vh - 80px);
 }
 
+#members {
+  width: 100vw;
+  margin-left: auto;
+  height: calc(100vh - 80px);
+}
+
 #settings {
   width: 100vw;
   margin-left: auto;
@@ -385,6 +391,9 @@ body {
     width: calc(100vw - 220px);
   }
   #profile {
+    width: calc(100vw - 220px);
+  }
+  #members {
     width: calc(100vw - 220px);
   }
   #settings {
