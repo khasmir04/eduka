@@ -39,9 +39,9 @@ function sidebar({isVisible}) {
             </a>
           </li>
           <li className="nav-item mb-4">
-            <a href="#" className={'nav-link text-tertiary hover:text-primary hover:!bg-[#f1f3f] py-3 pr-3 pl-10 flex leading-6 align-middle items-center ' + isActive("/profile")}>
-              <i className="bi bi-person-fill mr-4 text-2xl leading-6"></i>
-              <span className="inline text-base leading-4 hover:text-primary">Profile</span>
+            <a href="/manage" className={'nav-link text-tertiary hover:text-primary hover:!bg-[#f1f3f] py-3 pr-3 pl-10 flex leading-6 align-middle items-center ' + isActive("/manage")}>
+              <i className="bi bi-check2-square mr-4 text-2xl leading-6"></i>
+              <span className="inline text-base leading-4 hover:text-primary">Manage</span>
               <p className="notif"></p>
             </a>
           </li>

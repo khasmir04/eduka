@@ -24,9 +24,11 @@ export default function members() {
       </Sidebar>
       <section id="members">
         <PerfectScrollbar options={{ wheelSpeed: 0.2 , swipeEasing: true}}>
-          <div className="p-8 bg-white dark:bg-gray-800 rounded-lg">
-            <p className="text-center text-3xl font-bold text-gray-800 dark:text-white">
-              BIT41
+          <div className="p-6 bg-white dark:bg-gray-800 rounded-lg">
+            <h6 className="text-xl font-bold my-auto text-primary">Wow!</h6>
+            <h2 className="text-md text-gray-400 ">That's one hell of a team!</h2>
+            <p className="text-center text-3xl font-bold text-secondary dark:text-white">
+              Team Valo
             </p>
             <p className="text-center mb-12 text-xl font-normal text-gray-500 dark:text-gray-300">
               Meet the best team in the World

@@ -18,7 +18,7 @@ export default function Register() {
   }
 
   const registerSuccess = () => {
-    toast.success('🦄 Registration complete! Redirecting', {
+    toast.success('✔ Registration complete! Redirecting', {
       position: "top-right",
       autoClose: 4000,
       hideProgressBar: false,
@@ -35,7 +35,7 @@ export default function Register() {
   }
 
   const registerFailed = () => {
-    toast.error("🦄 Registration Failed! Please don't leave blanks.", {
+    toast.error("❌ Registration Failed! Please don't leave blanks.", {
       position: "top-right",
       autoClose: 4000,
       hideProgressBar: false,

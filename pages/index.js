@@ -15,7 +15,7 @@ function login() {
   }
 
   const loginSuccess = () => {
-    toast.success('🦄 Login Success! Redirecting...', {
+    toast.success('✔ Login Success! Redirecting...', {
       position: "top-right",
       autoClose: 2000,
       hideProgressBar: false,

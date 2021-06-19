@@ -12,7 +12,7 @@ export default function Recovery() {
   }
 
   const sendingSuccess = () => {
-    toast.success('🦄 Sent! Please check your email.', {
+    toast.success('✔ Sent! Please check your email.', {
       position: "top-right",
       autoClose: 4000,
       hideProgressBar: false,

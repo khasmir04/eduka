@@ -25,22 +25,21 @@ function overview() {
       <Sidebar isVisible={sidebar}>
       </Sidebar>
       <section id="overview" className="">
-        <PerfectScrollbar options={{ wheelSpeed: 0.2 , swipeEasing: true}}>
-          <div className="overview-container w-full mx-auto bg-blue-200 p-4">
+        <PerfectScrollbar>
+          <div className="overview-container bg-white w-full mx-auto p-6">
             <div className="w-full md:mb-6 mb-8">
               <div className="flex flex-wrap">
                 <div className="w-full lg:w-8/12 md:pr-6 mb-8 md:mb-0">
-                  <div className="mb-5 text-center md:text-left md:pl-4 ">
-                    <h1 className="text-xl font-bold fadeintop">
-                      Hello, Student
-                    </h1>
+                  <div className="mb-5 text-center md:text-left ">
+                    <h6 className="text-xl font-bold my-auto text-primary">Hi Khasmir!</h6>
+                    <h2 className="text-md text-gray-400 ">Welcome! Is everything good?</h2>
                   </div>
                   <div className="flex flex-wrap bg-gray-100 rounded-xl mx-auto">
-                    <div className="w-full lg:w-8/12 p-4 fadeintop">
+                    <div className="w-full lg:w-8/12 p-4 ">
                       <LineChart />
                     </div>
                     <div className="w-full lg:w-4/12">
-                      <div className="py-8 px-8 fadeintop">
+                      <div className="py-8 px-8 ">
                         <div className="bg-gray-100 border border-gray-200 rounded-xl flex py-6 px-6">
                           <div className="w-full lg:w-12/12">
                             <div>
@@ -213,7 +212,7 @@ function overview() {
                 <div className="w-full lg:w-4/12 ">
                   <div className=" bg-gray-100 rounded-xl">
                     <div className="w-full">
-                      <div className="flex fadeintop">
+                      <div className="flex ">
                         <div className="w-full py-8 px-8">
                           <div className="flex justify-between ">
                             <span className="text-lg font-bold mb-8 ">
@@ -337,16 +336,16 @@ function overview() {
                 <div className="w-full lg:w-8/12 md:pr-6 ">
                   <div className="flex flex-wrap">
                     <div className="w-full lg:w-6/12 md:pr-6 mb-10 md:mb-0 ">
-                      <div className=" fadeintop w-full rounded-xl bg-gray-100 p-4 relative">
+                      <div className=" w-full rounded-xl bg-gray-100 p-4 relative">
                         <div className="max-w-[485px]">
                           <img
                             className="w-full h-[270px] object-cover mx-auto rounded-xl"
-                            src="/img/programming-exam.svg"
+                            src="/img/programming-exam.jpg"
                             alt=""
                           />
                         </div>
-                        <div className="absolute -bottom-0 left-0 w-full">
-                          <div className="bg-white px-4 py-4 rounded-3xl fadeintop">
+                        <div className="absolute -bottom-2 left-0 w-full">
+                          <div className="bg-white px-4 py-4 rounded-3xl">
                             <div className="md:flex md:justify-between mb-2 w-full">
                               <div>
                                 <span className="text-xl font-bold">
@@ -385,12 +384,12 @@ function overview() {
                       </div>
                     </div>
                     <div className="w-full lg:w-6/12  mb-8 md:mb-0 bg-gray-100 rounded-xl">
-                      <div className=" fadeintop p-6">
+                      <div className=" p-6">
                         <div className="flex justify-between mb-10 ">
                           <span className="text-base font-bold ">
                             Leaderboard Ranking
                           </span>
-                          <div className="flex mr-3 md:mr-3">
+                          <div className="flex">
                             <span>
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -417,24 +416,19 @@ function overview() {
                             </span>
                           </div>
                         </div>
-                        <div className="mb-6 flex ">
-                          <div className="w-8/12 w-full">
-                            <div className="flex justify-between w-full">
-                              <div>
-                                <span className="text-gray-600 text-sm">
-                                  No
-                                </span>
-                              </div>
-                              <div>
-                                <span className="text-gray-600 text-sm">
-                                  Name
-                                </span>
-                              </div>
-                            </div>
-                          </div>
 
-                          <div className="w-4/12 w-full flex justify-center items-center">
+                        <div className="12/12 w-full flex mb-6">
+                          <div className="flex justify-between w-full">
                             <div>
+                              <span className="text-gray-600 text-sm">No</span>
+                            </div>
+
+                            <div>
+                              <span className="text-gray-600 text-sm mx-auto">
+                                Name
+                              </span>
+                            </div>
+                            <div className="pr-6">
                               <span className="text-gray-600 text-sm">
                                 Score
                               </span>
@@ -446,28 +440,31 @@ function overview() {
                           <div className="w-1/12">
                             <span>1</span>
                           </div>
-                          <div className="w-11/12 w-full">
-                            <div className="bg-white max-w[10rem] py-1 px-2 rounded-3xl">
-                              <div className="flex items-center">
+                          <div className="bg-white py-1 px-2 rounded-3xl w-full">
+                            <div className="w-11/12 w-full ">
+                              <div className="w-full">
                                 <div className="flex items-center w-full">
-                                  <div className="flex items-center">
-                                    <div className="pr-3">
-                                      <span>
-                                        <img
-                                          className="object-cover rounded-full w-10 h-10"
-                                          src="/img/user-1.jpg"
-                                          alt=""
-                                        />
-                                      </span>
+                                  <div className="flex items-center justify-evenly w-full">
+                                    <div className="flex items-center w-full">
+                                      <div className="pr-3">
+                                        <span>
+                                          <img
+                                            className="object-cover rounded-full w-10 h-10"
+                                            src="/img/user-1.jpg"
+                                            alt=""
+                                          />
+                                        </span>
+                                      </div>
+                                      <div className="text-xs font-bold mr-auto">
+                                        <span>Martin Braitwhite</span>
+                                      </div>
+
+                                      <div className="bg-secondary rounded-3xl px-2">
+                                        <span className=" text-white text-xs">
+                                          795 points
+                                        </span>
+                                      </div>
                                     </div>
-                                    <div className="text-xs font-bold">
-                                      <span>Martin Braitwhite</span>
-                                    </div>
-                                  </div>
-                                  <div className="bg-secondary rounded-3xl px-2 mx-auto">
-                                    <span className=" text-white text-xs">
-                                      795 points
-                                    </span>
                                   </div>
                                 </div>
                               </div>
@@ -480,8 +477,8 @@ function overview() {
                             <span>2</span>
                           </div>
                           <div className="w-11/12 w-full">
-                            <div className="flex items-center w-full px-2">
-                              <div className="flex items-center">
+                            <div className="w-full flex items-center justify-endjustify-between w-full px-2">
+                              <div className="flex items-center w-full">
                                 <div>
                                   <img
                                     className="object-cover rounded-full w-10 h-10"
@@ -489,14 +486,14 @@ function overview() {
                                     alt=""
                                   />
                                 </div>
-                                <div className="mr-2">
-                                  <span className="text-xs pl-3 font-bold mr-2">
+                                <div className="mr-auto">
+                                  <span className="text-xs pl-3 font-bold">
                                     Jesse Lingard
                                   </span>
                                 </div>
-                              </div>
-                              <div className="mx-auto">
-                                <span className="text-xs">532 points</span>
+                                <div className="ml-auto">
+                                  <span className="text-xs">532 points</span>
+                                </div>
                               </div>
                             </div>
                           </div>
@@ -507,7 +504,7 @@ function overview() {
                           </div>
                           <div className="w-11/12 w-full ">
                             <div className="flex items-center w-full ">
-                              <div className="flex items-center px-2">
+                              <div className="flex items-center px-2 w-full">
                                 <div>
                                   <span>
                                     <img
@@ -517,14 +514,14 @@ function overview() {
                                     />
                                   </span>
                                 </div>
-                                <div className="mr-2">
+                                <div className="mr-auto">
                                   <span className="text-xs font-bold pl-3">
                                     Hudson Odoi
                                   </span>
                                 </div>
-                              </div>
-                              <div className="mx-auto">
-                                <span className="text-xs">441 points</span>
+                                <div>
+                                  <span className="text-xs">441 points</span>
+                                </div>
                               </div>
                             </div>
                           </div>
@@ -539,7 +536,7 @@ function overview() {
                   </div>
                 </div>
 
-                <div className="w-full lg:w-4/12 fadeintop bg-gray-100 rounded-xl">
+                <div className="w-full lg:w-4/12 bg-gray-100 rounded-xl">
                   <div className=" p-8">
                     <div className="flex justify-between mb-10">
                       <span className="text-lg font-bold leading-5 text-blue-900 ">
