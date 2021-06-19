@@ -1,17 +1,48 @@
 import React, { useState } from "react";
 import Head from "next/head";
 import { useRouter } from 'next/router'
-
+import { ToastContainer, toast } from 'react-toastify';
 
 export default function Recovery() {
   const router = useRouter()
   const [email, setEmail] = useState()
 
-  const proceedToLogin = (e) =>{
+  const redirectToLogin= () =>{
+    router.push("/")
+  }
+
+  const sendingSuccess = () => {
+    toast.success('🦄 Sent! Please check your email.', {
+      position: "top-right",
+      autoClose: 4000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: false,
+      draggable: true,
+      progress: undefined,
+      });
+    setTimeout(() => redirectToLogin(),4000) ;
+  }
+
+  const sendingFailed = () => {
+    toast.error('❌ Please provide your email.', {
+      position: "top-right",
+      autoClose: 4000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: false,
+      draggable: true,
+      progress: undefined,
+      });
+  }
+
+  const checkLogin = (e) =>{
     e.preventDefault()
     if(!email==""){
-      router.push("/")
+      sendingSuccess();
     }
+    else
+      sendingFailed();
   }
 
   return (
@@ -71,7 +102,7 @@ export default function Recovery() {
                       <button
                         className="bg-secondary text-gray-100 p-4 w-full rounded-full tracking-wide font-semibold font-display focus:outline-none focus:shadow-outline hover:bg-pink-600 shadow-lg"
                         type="button"
-                        onClick={proceedToLogin}
+                        onClick={checkLogin}
                       >
                         Send link to my Email
                       </button>
@@ -82,6 +113,17 @@ export default function Recovery() {
             </div>
           </div>
         </div>
+        <ToastContainer
+        position="top-right"
+        autoClose={4000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        />
       </section>
     </>
   );

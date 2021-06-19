@@ -1,32 +1,64 @@
-import React from "react";
+import React, { useState } from "react";
 import Head from "next/head";
 import { useRouter } from 'next/router'
 import { ToastContainer, toast } from 'react-toastify';
+import {css} from "glamor";
   
 
 
 export default function Register() {
   const router = useRouter()
+  const [name, setName] = useState()
+  const [email, setEmail] = useState()
+  const [password, setPassword] = useState()
+  const [checked, setChecked] =useState(false)
 
-  
+  const redirectToLogin = () =>{
+    router.push("/")
+  }
 
-  const notify = () => {
-    toast.success('🦄 Registration complete!', {
+  const registerSuccess = () => {
+    toast.success('🦄 Registration complete! Redirecting', {
       position: "top-right",
       autoClose: 4000,
       hideProgressBar: false,
       closeOnClick: true,
       pauseOnHover: false,
       draggable: true,
-      progress: undefined,
+      progress: undefined,toastClassName: css({
+        fontSize: '18px !important',
+        backgroundColor: '#fff !important',
+        padding: '15px !important'
+      }),
       });
-    setTimeout(proceedToLogin,4000) ;
+      setTimeout(() => redirectToLogin(),4000) ;
   }
 
-
-  const proceedToLogin = () =>{
-    router.push("/")
+  const registerFailed = () => {
+    toast.error("🦄 Registration Failed! Please don't leave blanks.", {
+      position: "top-right",
+      autoClose: 4000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: false,
+      draggable: true,
+      progress: undefined,toastClassName: css({
+        fontSize: '18px !important',
+        backgroundColor: '#fff !important',
+        padding: '15px !important'
+      }),
+      });
   }
+
+  const checkRegistration = (e) => {
+    e.preventDefault()
+    if(!email=="" && !name=="" && !password=="" &&checked==true){
+      registerSuccess();
+    }
+    else
+      registerFailed();
+  }
+  
 
   return (
     <>
@@ -93,6 +125,7 @@ export default function Register() {
                         type="text"
                         className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
                         placeholder="Name"
+                        onChange={(event) => setName(event.target.value)}
                       />
                     </div>
 
@@ -107,6 +140,7 @@ export default function Register() {
                         type="email"
                         className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
                         placeholder="Email"
+                        onChange={(event) => setEmail(event.target.value)}
                       />
                     </div>
 
@@ -121,6 +155,7 @@ export default function Register() {
                         type="password"
                         className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
                         placeholder="Password"
+                        onChange={(event) => setPassword(event.target.value)}
                       />
                     </div>
 
@@ -130,6 +165,7 @@ export default function Register() {
                           id="customCheckLogin"
                           type="checkbox"
                           className="form-checkbox border-0 rounded text-primary ml-1 w-5 h-5 ease-linear transition-all duration-150"
+                          onChange={(event) => setChecked(event.target.checked)}
                         />
                         <span className="ml-2 text-sm font-semibold text-blueGray-600">
                           I agree with the{" "}
@@ -148,7 +184,7 @@ export default function Register() {
                       <button
                         className="bg-secondary text-gray-100 p-4 w-full rounded-full tracking-wide font-semibold font-display focus:outline-none focus:shadow-outline hover:bg-pink-600 shadow-lg"
                         type="button"
-                        onClick={notify}
+                        onClick={checkRegistration}
                       >
                         Create Account
                       </button>

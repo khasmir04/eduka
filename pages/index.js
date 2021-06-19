@@ -1,6 +1,7 @@
 import React,{useState} from 'react'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
+import { ToastContainer, toast } from 'react-toastify'
 
 function login() {
 	const [name, setName] = useState()
@@ -9,12 +10,37 @@ function login() {
 	const router = useRouter()
 	const href = "/overview"
 
+  const loginSuccess = () => {
+    toast.success('🦄 Login Success! Redirecting...', {
+      position: "top-right",
+      autoClose: 4000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: false,
+      draggable: true,
+      progress: undefined,
+      });
+    setTimeout(router.push(href),4000) ;
+  }
+
+  const loginFailed = () => {
+    toast.error('❌ Log In Failed. \nPlease check username and password.', {
+      position: "top-right",
+      autoClose: 4000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      }); ;
+  }
+
 	const proceedToDashboard = (e) => {
 		e.preventDefault()
 		if(name=="devkj@gmail.com" && password=="devkim"){
-			router.push(href)
+			loginSuccess();
 		} else {
-      alert("Log In Failed. Please check username and password.")
+      loginFailed();
     }
   }
 
@@ -29,7 +55,7 @@ function login() {
       <link rel="preconnect" href="https://fonts.gstatic.com"></link>
       <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet"></link>
     </Head>
-    <div className="lg:flex">
+    <div id="login" className="lg:flex">
       <div className="lg:w-1/2 xl:max-w-screen-sm">
         <div className="py-12 bg-indigo-100 lg:bg-white flex justify-center lg:justify-start lg:px-12">
           <div className="cursor-pointer flex items-center">
@@ -118,6 +144,17 @@ function login() {
           </svg>
         </div>
       </div>
+      <ToastContainer
+        position="top-right"
+        autoClose={4000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        />
     </div>
   </div>
   )
