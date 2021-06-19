@@ -10,17 +10,21 @@ function login() {
 	const router = useRouter()
 	const href = "/overview"
 
+  const loginToDashboard = () =>{
+    router.push(href)
+  }
+
   const loginSuccess = () => {
     toast.success('🦄 Login Success! Redirecting...', {
       position: "top-right",
-      autoClose: 4000,
+      autoClose: 2000,
       hideProgressBar: false,
       closeOnClick: true,
       pauseOnHover: false,
       draggable: true,
       progress: undefined,
       });
-    setTimeout(router.push(href),4000) ;
+    setTimeout(() => loginToDashboard(),2000)
   }
 
   const loginFailed = () => {
