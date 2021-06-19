@@ -1,10 +1,28 @@
 import React from "react";
 import Head from "next/head";
 import { useRouter } from 'next/router'
+import { ToastContainer, toast } from 'react-toastify';
+  
 
 
 export default function Register() {
   const router = useRouter()
+
+  
+
+  const notify = () => {
+    toast.success('🦄 Registration complete!', {
+      position: "top-right",
+      autoClose: 4000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: false,
+      draggable: true,
+      progress: undefined,
+      });
+    setTimeout(proceedToLogin,4000) ;
+  }
+
 
   const proceedToLogin = () =>{
     router.push("/")
@@ -130,7 +148,7 @@ export default function Register() {
                       <button
                         className="bg-secondary text-gray-100 p-4 w-full rounded-full tracking-wide font-semibold font-display focus:outline-none focus:shadow-outline hover:bg-pink-600 shadow-lg"
                         type="button"
-                        onClick={proceedToLogin}
+                        onClick={notify}
                       >
                         Create Account
                       </button>
@@ -141,6 +159,17 @@ export default function Register() {
             </div>
           </div>
         </div>
+        <ToastContainer
+        position="top-right"
+        autoClose={4000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        />
       </section>
     </>
   );

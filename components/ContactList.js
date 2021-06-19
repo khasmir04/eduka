@@ -33,7 +33,7 @@ function ContactList() {
 				</div>
 				<RadioButtonInbox></RadioButtonInbox>
 			</div>
-			<PerfectScrollbar className="!h-[calc(100vh-256px)]">
+			<PerfectScrollbar className="!h-[calc(100vh-256px)]" wheelSpeed={0.2} options={{ wheelSpeed: 0.2 , swipeEasing: true}}>
 				<div className="contacts__content">
 					{userData.map((convo) => (
 						<div key={convo.id}>
