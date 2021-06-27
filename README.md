@@ -57,7 +57,7 @@ Languages and Tools Used🛠:
 <code><img height="20" src="/public/img/tools/loader-spinner.png"></code>
 <code><img height="20" src="/public/img/tools/perfect-scrollbar.png"></code>
 <code><img height="20" src="/public/img/tools/swiper-logo.svg"></code>
-<code><img height="20" src="/public/img/tools/tailwind.svg"></code>
+<code><img height="20" src="/public/img/tools/tailwind.png"></code>
 
 </details>
 
