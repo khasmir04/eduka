@@ -29,7 +29,7 @@ function ContactInfo({toggleContactInfo,toggleImage}) {
             <img className="contact-info__profile__img" src={data.image} alt="contact-info__profile__img" />
             <i className="bi bi-check-circle-fill absolute bottom-0" />
           </div>
-          <h2 className="contact-info__profile__name text-c_dark text-base mb-2 font-medium leading-4">{data.contact}</h2>
+          <h2 className="contact-info__profile__name text-c_dark text-base mb-2 font-medium leading-4">{data.name}</h2>
           <p className="contact-info__profile__title mb-0 text-c_gray leading-4">{data.title}</p>
         </div>
       </div>
