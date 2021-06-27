@@ -40,7 +40,10 @@ export default function settings() {
               <div className="relative flex flex-col break-words w-full mb-6 rounded-lg bg-blueGray-100">
                 <div className="rounded-t bg-white mb-0 px-6 py-6">
                   <div className="text-center flex justify-between">
-                    <h6 className="text-xl font-bold my-auto text-primary">Hi Khasmir!</h6>
+                    <div>
+                      <h6 className="text-xl font-bold my-auto text-primary">Hi Khasmir!</h6>
+                      <h2 className="text-md text-gray-400 ">Your account settings</h2>
+                    </div>
                     <button
                       className="bg-primary hover:bg-secondary active:bg-secondary text-white font-bold text-sm px-4 py-2 rounded-xl shadow hover:shadow-md outline-none focus:outline-none mr-1 ease-linear transition-all duration-150"
                       type="button"

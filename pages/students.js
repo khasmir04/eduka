@@ -3,8 +3,9 @@ import Head from "next/head"
 import Header from "../components/layout/Header"
 import Sidebar from "../components/layout/Sidebar"
 import PerfectScrollbar from 'react-perfect-scrollbar'
+import DropdownSelect from "../components/dropdown/DropdownSelect"
 
-export default function members() {
+export default function students() {
   const [sidebar, setSidebar] = useState(false)
 
   function toggleSidebar(){
@@ -12,9 +13,9 @@ export default function members() {
   }
 
   return (
-    <>
+    <div>
       <Head>
-        <title>EduKa | Members</title>
+        <title>EduKa | Students</title>
         <link rel="preconnect" href="https://fonts.gstatic.com"></link>
         <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet"></link>
       </Head>
@@ -22,19 +23,24 @@ export default function members() {
       </Header>
       <Sidebar isVisible={sidebar}>
       </Sidebar>
-      <section id="members">
-        <PerfectScrollbar options={{ wheelSpeed: 0.2 , swipeEasing: true}}>
-          <div className="p-6 bg-white dark:bg-gray-800 rounded-lg">
+      <section id="students">
+        <div className="h-full flex flex-col p-6 bg-white dark:bg-gray-800 rounded-lg">
+          <div className="">
             <h6 className="text-xl font-bold my-auto text-primary">Wow!</h6>
             <h2 className="text-md text-gray-400 ">That's one hell of a team!</h2>
             <p className="text-center text-3xl font-bold text-secondary dark:text-white">
               Team Valo
             </p>
-            <p className="text-center mb-12 text-xl font-normal text-gray-500 dark:text-gray-300">
+            <p className="text-center mb-6 text-xl font-normal text-gray-500 dark:text-gray-300">
               Meet the best team in the World
             </p>
+          </div>
+          <div className="flex justify-end items-center border border-c_light mb-3">
+            <DropdownSelect/>
+          </div>
+          <PerfectScrollbar options={{ wheelSpeed: 0.2 , swipeEasing: true}}>
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
-              <div className="p-4 hover:shadow-xl rounded-lg transition-shadow hover:cursor-pointer">
+              <div className="p-4 border-2 border-c_light hover:shadow-xl rounded-lg transition-shadow hover:cursor-pointer">
                 <div className="flex-col  flex justify-center items-center">
                   <div className="flex-shrink-0">
                     <a href="#" className="block relative">
@@ -51,7 +57,7 @@ export default function members() {
                   </div>
                 </div>
               </div>
-              <div className="p-4 hover:shadow-xl rounded-lg transition-shadow hover:cursor-pointer">
+              <div className="p-4 border-2 border-c_light hover:shadow-xl rounded-lg transition-shadow hover:cursor-pointer">
                 <div className="flex-col  flex justify-center items-center">
                   <div className="flex-shrink-0">
                     <a href="#" className="block relative">
@@ -68,7 +74,7 @@ export default function members() {
                   </div>
                 </div>
               </div>
-              <div className="p-4 hover:shadow-xl rounded-lg transition-shadow hover:cursor-pointer">
+              <div className="p-4 border-2 border-c_light hover:shadow-xl rounded-lg transition-shadow hover:cursor-pointer">
                 <div className="flex-col  flex justify-center items-center">
                   <div className="flex-shrink-0">
                     <a href="#" className="block relative">
@@ -85,7 +91,7 @@ export default function members() {
                   </div>
                 </div>
               </div>
-              <div className="p-4 hover:shadow-xl rounded-lg transition-shadow hover:cursor-pointer">
+              <div className="p-4 border-2 border-c_light hover:shadow-xl rounded-lg transition-shadow hover:cursor-pointer">
                 <div className="flex-col  flex justify-center items-center">
                   <div className="flex-shrink-0">
                     <a href="#" className="block relative">
@@ -102,7 +108,7 @@ export default function members() {
                   </div>
                 </div>
               </div>
-              <div className="p-4 hover:shadow-xl rounded-lg transition-shadow hover:cursor-pointer">
+              <div className="p-4 border-2 border-c_light hover:shadow-xl rounded-lg transition-shadow hover:cursor-pointer">
                 <div className="flex-col  flex justify-center items-center">
                   <div className="flex-shrink-0">
                     <a href="#" className="block relative">
@@ -119,7 +125,7 @@ export default function members() {
                   </div>
                 </div>
               </div>
-              <div className="p-4 hover:shadow-xl rounded-lg transition-shadow hover:cursor-pointer">
+              <div className="p-4 border-2 border-c_light hover:shadow-xl rounded-lg transition-shadow hover:cursor-pointer">
                 <div className="flex-col  flex justify-center items-center">
                   <div className="flex-shrink-0">
                     <a href="#" className="block relative">
@@ -136,7 +142,7 @@ export default function members() {
                   </div>
                 </div>
               </div>
-              <div className="p-4 hover:shadow-xl rounded-lg transition-shadow hover:cursor-pointer">
+              <div className="p-4 border-2 border-c_light hover:shadow-xl rounded-lg transition-shadow hover:cursor-pointer">
                 <div className="flex-col  flex justify-center items-center">
                   <div className="flex-shrink-0">
                     <a href="#" className="block relative">
@@ -153,7 +159,7 @@ export default function members() {
                   </div>
                 </div>
               </div>
-              <div className="p-4 hover:shadow-xl rounded-lg transition-shadow hover:cursor-pointer">
+              <div className="p-4 border-2 border-c_light hover:shadow-xl rounded-lg transition-shadow hover:cursor-pointer">
                 <div className="flex-col  flex justify-center items-center">
                   <div className="flex-shrink-0">
                     <a href="#" className="block relative">
@@ -170,7 +176,7 @@ export default function members() {
                   </div>
                 </div>
               </div>
-              <div className="p-4 hover:shadow-xl rounded-lg transition-shadow hover:cursor-pointer">
+              <div className="p-4 border-2 border-c_light hover:shadow-xl rounded-lg transition-shadow hover:cursor-pointer">
                 <div className="flex-col  flex justify-center items-center">
                   <div className="flex-shrink-0">
                     <a href="#" className="block relative">
@@ -187,7 +193,7 @@ export default function members() {
                   </div>
                 </div>
               </div>
-              <div className="p-4 hover:shadow-xl rounded-lg transition-shadow hover:cursor-pointer">
+              <div className="p-4 border-2 border-c_light hover:shadow-xl rounded-lg transition-shadow hover:cursor-pointer">
                 <div className="flex-col  flex justify-center items-center">
                   <div className="flex-shrink-0">
                     <a href="#" className="block relative">
@@ -204,7 +210,7 @@ export default function members() {
                   </div>
                 </div>
               </div>
-              <div className="p-4 hover:shadow-xl rounded-lg transition-shadow hover:cursor-pointer">
+              <div className="p-4 border-2 border-c_light hover:shadow-xl rounded-lg transition-shadow hover:cursor-pointer">
                 <div className="flex-col  flex justify-center items-center">
                   <div className="flex-shrink-0">
                     <a href="#" className="block relative">
@@ -221,7 +227,7 @@ export default function members() {
                   </div>
                 </div>
               </div>
-              <div className="p-4 hover:shadow-xl rounded-lg transition-shadow hover:cursor-pointer">
+              <div className="p-4 border-2 border-c_light hover:shadow-xl rounded-lg transition-shadow hover:cursor-pointer">
                 <div className="flex-col  flex justify-center items-center">
                   <div className="flex-shrink-0">
                     <a href="#" className="block relative">
@@ -238,7 +244,7 @@ export default function members() {
                   </div>
                 </div>
               </div>
-              <div className="p-4 hover:shadow-xl rounded-lg transition-shadow hover:cursor-pointer">
+              <div className="p-4 border-2 border-c_light hover:shadow-xl rounded-lg transition-shadow hover:cursor-pointer">
                 <div className="flex-col  flex justify-center items-center">
                   <div className="flex-shrink-0">
                     <a href="#" className="block relative">
@@ -255,7 +261,7 @@ export default function members() {
                   </div>
                 </div>
               </div>
-              <div className="p-4 hover:shadow-xl rounded-lg transition-shadow hover:cursor-pointer">
+              <div className="p-4 border-2 border-c_light hover:shadow-xl rounded-lg transition-shadow hover:cursor-pointer">
                 <div className="flex-col  flex justify-center items-center">
                   <div className="flex-shrink-0">
                     <a href="#" className="block relative">
@@ -272,7 +278,7 @@ export default function members() {
                   </div>
                 </div>
               </div>
-              <div className="p-4 hover:shadow-xl rounded-lg transition-shadow hover:cursor-pointer">
+              <div className="p-4 border-2 border-c_light hover:shadow-xl rounded-lg transition-shadow hover:cursor-pointer">
                 <div className="flex-col  flex justify-center items-center">
                   <div className="flex-shrink-0">
                     <a href="#" className="block relative">
@@ -289,7 +295,7 @@ export default function members() {
                   </div>
                 </div>
               </div>
-              <div className="p-4 hover:shadow-xl rounded-lg transition-shadow hover:cursor-pointer">
+              <div className="p-4 border-2 border-c_light hover:shadow-xl rounded-lg transition-shadow hover:cursor-pointer">
                 <div className="flex-col  flex justify-center items-center">
                   <div className="flex-shrink-0">
                     <a href="#" className="block relative">
@@ -306,7 +312,7 @@ export default function members() {
                   </div>
                 </div>
               </div>
-              <div className="p-4 hover:shadow-xl rounded-lg transition-shadow hover:cursor-pointer">
+              <div className="p-4 border-2 border-c_light hover:shadow-xl rounded-lg transition-shadow hover:cursor-pointer">
                 <div className="flex-col  flex justify-center items-center">
                   <div className="flex-shrink-0">
                     <a href="#" className="block relative">
@@ -323,7 +329,7 @@ export default function members() {
                   </div>
                 </div>
               </div>
-              <div className="p-4 hover:shadow-xl rounded-lg transition-shadow hover:cursor-pointer">
+              <div className="p-4 border-2 border-c_light hover:shadow-xl rounded-lg transition-shadow hover:cursor-pointer">
                 <div className="flex-col  flex justify-center items-center">
                   <div className="flex-shrink-0">
                     <a href="#" className="block relative">
@@ -341,9 +347,9 @@ export default function members() {
                 </div>
               </div>
             </div>
-          </div>
-        </PerfectScrollbar>
+          </PerfectScrollbar>
+        </div>
       </section>
-    </>
+    </div>
   );
 }

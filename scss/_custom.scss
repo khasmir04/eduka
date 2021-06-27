@@ -13,7 +13,6 @@ body {
   height: calc(100vh - 80px);
   background: $white;
   left: -220px;
-  z-index: 1;
   bottom: 0;
   transition: 0.25s;
 }
@@ -43,7 +42,7 @@ body {
   height: calc(100vh - 80px);
 }
 
-#members {
+#students {
   width: 100vw;
   margin-left: auto;
   height: calc(100vh - 80px);
@@ -302,9 +301,14 @@ body {
 .nav-link.active {
   i,
   span {
-    color: $primary !important;
+    color: $white !important;
   }
-  background: linear-gradient(90deg, #f1f0f9 100%, rgba(241, 240, 249, 0) 0%);
+  background: rgb(63, 54, 151);
+  background: linear-gradient(
+    90deg,
+    rgba(63, 54, 151, 1) 0%,
+    rgba(63, 54, 151, 0.7651435574229692) 100%
+  );
 }
 
 //ADD TO BOOTSTRAP Utilities
@@ -402,7 +406,7 @@ body {
   #manage {
     width: calc(100vw - 220px);
   }
-  #members {
+  #students {
     width: calc(100vw - 220px);
   }
   #settings {

@@ -16,7 +16,7 @@ function Header({toggleSidebar}) {
   return (
     userInfo.map((data) => (
       <div key={data.id}>
-        <header id="header" className="relative">
+        <header id="header" className="relative z-20">
             <div className="container-fluid header-container bg-white border-b-2 border-c_light p-4">
                 <div className="flex items-center">
                     <div>
@@ -42,7 +42,7 @@ function Header({toggleSidebar}) {
                             <span className="z-10 leading-snug font-normal absolute text-center text-text-c_gray absolute bg-transparent rounded text-base items-center justify-center w-8 pl-3 py-3">
                                 <i className="bi bi-search text-base text-c_gray"></i>
                             </span>
-                            <input type="text" placeholder="Search" className="px-3 py-3 placeholder-text-c_gray text-blueGray-600 relative bg-c_light rounded text-base border-0 outline-none focus:outline-none focus:ring w-full pl-10"/>
+                            <input type="text" placeholder="Search students" className="px-3 py-3 placeholder-text-c_gray text-blueGray-600 relative bg-c_light rounded text-base border-0 outline-none focus:outline-none focus:ring w-full pl-10"/>
                         </div>
                     </div>
 

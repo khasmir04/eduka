@@ -41,7 +41,7 @@ export default function DropdownUser() {
                         'block px-4 py-2 text-sm'
                       )}
                     >
-                      Account settings
+                      Dashboard Settings
                     </a>
                   )}
                 </Menu.Item>

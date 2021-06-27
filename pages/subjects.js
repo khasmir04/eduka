@@ -4,7 +4,6 @@ import PerfectScrollbar from 'react-perfect-scrollbar'
 
 import Sidebar from "../components/layout/Sidebar"
 import Header from "../components/layout/Header"
-import FileUpload from "../components/modal/FileUpload"
 
 function subjects() {
   const [sidebar, setSidebar] = useState(false)
@@ -24,177 +23,177 @@ function subjects() {
       </Header>
       <Sidebar isVisible={sidebar}>
       </Sidebar>
-      <section id="profile" className="overflow-y-scroll">
-        <div className="profile-container w-full p-6">
-          <h6 className="text-xl font-bold my-auto text-primary">Hi Khasmir!</h6>
+      <section id="profile">
+        <PerfectScrollbar options={{ wheelSpeed: 0.5 , swipeEasing: true}} className="h-full w-full p-6">
+          <h6 className="text-xl font-bold my-auto text-primary">My Subjects</h6>
           <h2 className="text-md text-gray-400 ">Here are your subjects. You can do it!</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 my-4">
             <div className="w-full">
-              <div className="shadow-lg px-4 py-6 w-full bg-white dark:bg-gray-700 relative">
+              <div className="border-2 border-c_light shadow-lg px-4 py-6 w-full bg-white dark:bg-gray-700 cursor-pointer transform transition duration-300 hover:scale-105 relative">
                 <div className="w-full object-cover w-32 h-32 ">
-                  <img src="/img/python-logo.svg" alt="" />
+                  <img src="/img/subjects/python-logo.svg" alt="python" />
                 </div>
                 <div className="flex items-end space-x-2 my-6">
-                  <span className="text-5xl text-black dark:text-white font-bold">
+                  <span className="text-3xl text-primary dark:text-white font-bold">
                     Python
                   </span>
                 </div>
                 <div className="dark:text-white">
                   <div className="flex items-center pb-2 mb-2  sm:space-x-12  justify-between border-b border-gray-200">
-                    <span className="font-medium text-lg">Mark:</span>
-                    <div className="flex items-end text-sm">1.5 Avg</div>
+                    <span className="font-medium text-md">Mark:</span>
+                    <div className="flex items-end text-md">1.5 Avg</div>
                   </div>
-                  <div className="flex items-center mb-2 pb-2 text-sm space-x-12 md:space-x-24 justify-between border-b border-gray-200">
-                    <span className="font-medium text-lg">Subject:</span>
-                    <div className="flex items-end text-sm">Python</div>
+                  <div className="flex items-center mb-2 pb-2 space-x-12 md:space-x-24 justify-between border-b border-gray-200">
+                    <span className="font-medium text-md">Subject:</span>
+                    <div className="flex items-end text-md">Python</div>
                   </div>
-                  <div className="flex items-center text-sm space-x-12 md:space-x-24 justify-between">
-                    <span className="font-medium text-lg">Status:</span>
-                    <div className="flex items-end text-sm">Enrolled</div>
+                  <div className="flex items-center space-x-12 md:space-x-24 justify-between">
+                    <span className="font-medium text-md">Status:</span>
+                    <div className="flex items-end text-md">Enrolled</div>
                   </div>
                 </div>
               </div>
             </div>
             <div className="w-full">
-              <div className="shadow-lg px-4 py-6 w-full bg-white dark:bg-gray-700 relative">
+              <div className="border-2 border-c_light shadow-lg px-4 py-6 w-full bg-white dark:bg-gray-700 cursor-pointer transform transition duration-300 hover:scale-105 relative">
                 <div className="flex items-center">
                   <div className="w-full object-cover w-32 h-32">
-                    <img className="" src="/img/JS-logo.svg" alt="" />
+                    <img src="/img/subjects/JS-logo.svg" alt="javascript" />
                   </div>
                 </div>
                 <div className="flex items-end space-x-2 my-6">
-                  <span className="text-5xl text-black dark:text-white font-bold">
+                  <span className="text-3xl text-primary dark:text-white font-bold">
                     Javascript
                   </span>
                 </div>
 
                 <div className="dark:text-white">
                   <div className="flex items-center pb-2 mb-2  sm:space-x-12  justify-between border-b border-gray-200">
-                    <span className="font-medium text-lg">Mark:</span>
-                    <div className="flex items-end text-sm">2.5 Avg</div>
+                    <span className="font-medium text-md">Mark:</span>
+                    <div className="flex items-end text-md">2.5 Avg</div>
                   </div>
-                  <div className="flex items-center mb-2 pb-2 text-sm space-x-12 md:space-x-24 justify-between border-b border-gray-200">
-                    <span className="font-medium text-lg">Subject:</span>
-                    <div className="flex items-end text-sm">JavaScript</div>
+                  <div className="flex items-center mb-2 pb-2 space-x-12 md:space-x-24 justify-between border-b border-gray-200">
+                    <span className="font-medium text-md">Subject:</span>
+                    <div className="flex items-end text-md">JavaScript</div>
                   </div>
-                  <div className="flex items-center text-sm space-x-12 md:space-x-24 justify-between">
-                    <span className="font-medium text-lg">Status:</span>
-                    <div className="flex items-end text-sm">Enrolled</div>
+                  <div className="flex items-center space-x-12 md:space-x-24 justify-between">
+                    <span className="font-medium text-md">Status:</span>
+                    <div className="flex items-end text-md">Enrolled</div>
                   </div>
                 </div>
               </div>
             </div>
             <div className="w-full">
-              <div className="shadow-lg px-4 py-6 w-full bg-white dark:bg-gray-700 relative">
+              <div className="border-2 border-c_light shadow-lg px-4 py-6 w-full bg-white dark:bg-gray-700 cursor-pointer transform transition duration-300 hover:scale-105 relative">
                 <div className="object-cover w-full w-32 h-32">
-                  <img src="/img/html-logo.png" alt="" />
+                  <img src="/img/subjects/html-logo.png" alt="html" />
                 </div>
                 <div className="flex items-end space-x-2 my-6">
-                  <span className="text-5xl text-black dark:text-white font-bold">
+                  <span className="text-3xl text-primary dark:text-white font-bold">
                     HTML
                   </span>
                 </div>
 
                 <div className="dark:text-white">
                   <div className="flex items-center pb-2 mb-2  sm:space-x-12  justify-between border-b border-gray-200">
-                    <span className="font-medium text-lg">Mark:</span>
-                    <div className="flex items-end text-sm">1 Avg</div>
+                    <span className="font-medium text-md">Mark:</span>
+                    <div className="flex items-end text-md">1 Avg</div>
                   </div>
-                  <div className="flex items-center mb-2 pb-2 text-sm space-x-12 md:space-x-24 justify-between border-b border-gray-200">
-                    <span className="font-medium text-lg">Subject:</span>
-                    <div className="flex items-end text-sm">HTML</div>
+                  <div className="flex items-center mb-2 pb-2 space-x-12 md:space-x-24 justify-between border-b border-gray-200">
+                    <span className="font-medium text-md">Subject:</span>
+                    <div className="flex items-end text-md">HTML</div>
                   </div>
-                  <div className="flex items-center text-sm space-x-12 md:space-x-24 justify-between">
-                    <span className="font-medium text-lg">Status:</span>
-                    <div className="flex items-end text-sm">Enrolled</div>
+                  <div className="flex items-center space-x-12 md:space-x-24 justify-between">
+                    <span className="font-medium text-md">Status:</span>
+                    <div className="flex items-end text-md">Enrolled</div>
                   </div>
                 </div>
               </div>
             </div>
             <div className="w-full">
-              <div className="shadow-lg px-4 py-6 w-full bg-white dark:bg-gray-700 relative">
+              <div className="border-2 border-c_light shadow-lg px-4 py-6 w-full bg-white dark:bg-gray-700 cursor-pointer transform transition duration-300 hover:scale-105 relative">
                 <div className="object-cover w-full w-32 h-32">
-                  <img src="/img/wordpress-logo.svg" alt="" />
+                  <img src="/img/subjects/wordpress-logo.svg" alt="wordpress" />
                 </div>
                 <div className="flex items-end space-x-2 my-6">
-                  <span className="text-5xl text-black dark:text-white font-bold">
+                  <span className="text-3xl text-primary dark:text-white font-bold">
                     Wordpress
                   </span>
                 </div>
 
                 <div className="dark:text-white">
                   <div className="flex items-center pb-2 mb-2  sm:space-x-12  justify-between border-b border-gray-200">
-                    <span className="font-medium text-lg">Mark:</span>
-                    <div className="flex items-end text-sm">2 Avg</div>
+                    <span className="font-medium text-md">Mark:</span>
+                    <div className="flex items-end text-md">2 Avg</div>
                   </div>
-                  <div className="flex items-center mb-2 pb-2 text-sm space-x-12 md:space-x-24 justify-between border-b border-gray-200">
-                    <span className="font-medium text-lg">Subject:</span>
-                    <div className="flex items-end text-sm">Wordpress</div>
+                  <div className="flex items-center mb-2 pb-2 space-x-12 md:space-x-24 justify-between border-b border-gray-200">
+                    <span className="font-medium text-md">Subject:</span>
+                    <div className="flex items-end text-md">Wordpress</div>
                   </div>
-                  <div className="flex items-center text-sm space-x-12 md:space-x-24 justify-between">
-                    <span className="font-medium text-lg">Status:</span>
-                    <div className="flex items-end text-sm">Dropped</div>
+                  <div className="flex items-center space-x-12 md:space-x-24 justify-between">
+                    <span className="font-medium text-md">Status:</span>
+                    <div className="flex items-end text-md">Dropped</div>
                   </div>
                 </div>
               </div>
             </div>
             <div className="w-full">
-              <div className="shadow-lg px-4 py-6 w-full bg-white dark:bg-gray-700 relative">
+              <div className="border-2 border-c_light shadow-lg px-4 py-6 w-full bg-white dark:bg-gray-700 cursor-pointer transform transition duration-300 hover:scale-105 relative">
                 <div className="object-cover w-full w-32 h-32">
-                  <img src="/img/nodejs-logo.svg" alt="" />
+                  <img src="/img/subjects/nodejs-logo.jpg" alt="nodejs" />
                 </div>
                 <div className="flex items-end space-x-2 my-6">
-                  <span className="text-5xl text-black dark:text-white font-bold">
+                  <span className="text-3xl text-primary dark:text-white font-bold">
                     NodeJS
                   </span>
                 </div>
 
                 <div className="dark:text-white">
                   <div className="flex items-center pb-2 mb-2  sm:space-x-12  justify-between border-b border-gray-200">
-                    <span className="font-medium text-lg">Mark:</span>
-                    <div className="flex items-end text-sm">2.5 Avg</div>
+                    <span className="font-medium text-md">Mark:</span>
+                    <div className="flex items-end text-md">2.5 Avg</div>
                   </div>
-                  <div className="flex items-center mb-2 pb-2 text-sm space-x-12 md:space-x-24 justify-between border-b border-gray-200">
-                    <span className="font-medium text-lg">Subject:</span>
-                    <div className="flex items-end text-sm">NodeJS</div>
+                  <div className="flex items-center mb-2 pb-2 space-x-12 md:space-x-24 justify-between border-b border-gray-200">
+                    <span className="font-medium text-md">Subject:</span>
+                    <div className="flex items-end text-md">NodeJS</div>
                   </div>
-                  <div className="flex items-center text-sm space-x-12 md:space-x-24 justify-between">
-                    <span className="font-medium text-lg">Status:</span>
-                    <div className="flex items-end text-sm">Enrolled</div>
+                  <div className="flex items-center space-x-12 md:space-x-24 justify-between">
+                    <span className="font-medium text-md">Status:</span>
+                    <div className="flex items-end text-md">Enrolled</div>
                   </div>
                 </div>
               </div>
             </div>
             <div className="w-full">
-              <div className="shadow-lg px-4 py-6 w-full bg-white dark:bg-gray-700 relative">
+              <div className="border-2 border-c_light shadow-lg px-4 py-6 w-full bg-white dark:bg-gray-700 cursor-pointer transform transition duration-300 hover:scale-105 relative">
                 <div className="object-cover w-full w-32 h-32">
-                  <img src="/img/angular-logo.svg" alt="" />
+                  <img src="/img/subjects/angular-logo.svg" alt="angular" />
                 </div>
 
                 <div className="flex items-end space-x-2 my-6">
-                  <span className="text-5xl text-black dark:text-white font-bold">
+                  <span className="text-3xl text-primary dark:text-white font-bold">
                     Angular
                   </span>
                 </div>
 
                 <div className="dark:text-white">
                   <div className="flex items-center pb-2 mb-2  sm:space-x-12  justify-between border-b border-gray-200">
-                    <span className="font-medium text-lg">Mark:</span>
-                    <div className="flex items-end text-sm">2 Avg</div>
+                    <span className="font-medium text-md">Mark:</span>
+                    <div className="flex items-end text-md">2 Avg</div>
                   </div>
-                  <div className="flex items-center mb-2 pb-2 text-sm space-x-12 md:space-x-24 justify-between border-b border-gray-200">
-                    <span className="font-medium text-lg">Subject:</span>
-                    <div className="flex items-end text-sm">Angular</div>
+                  <div className="flex items-center mb-2 pb-2 space-x-12 md:space-x-24 justify-between border-b border-gray-200">
+                    <span className="font-medium text-md">Subject:</span>
+                    <div className="flex items-end text-md">Angular</div>
                   </div>
-                  <div className="flex items-center text-sm space-x-12 md:space-x-24 justify-between">
-                    <span className="font-medium text-lg">Status:</span>
-                    <div className="flex items-end text-sm">Enrolled</div>
+                  <div className="flex items-center space-x-12 md:space-x-24 justify-between">
+                    <span className="font-medium text-md">Status:</span>
+                    <div className="flex items-end text-md">Enrolled</div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
+        </PerfectScrollbar>
       </section>
     </div>
   );

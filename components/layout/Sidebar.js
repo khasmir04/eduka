@@ -12,7 +12,7 @@ function sidebar({isVisible}) {
 
   // setActiveMenu(currentPage);
     return (
-        <aside id="side-menu" className={`border-r-2 border-c_light flex flex-col bg-white ` + (isVisible ? '!left-[-220px]' : '!left-0')}>
+        <aside id="side-menu" className={`border-r-2 border-c_light flex flex-col bg-white z-10 ` + (isVisible ? '!left-[-220px]' : '!left-0')}>
         <div className="logo__image text-center pt-10 pb-12">
           <Image className="logo__img" src="/img/logo.png" alt="logo-img" width="137" height="24"/>
         </div>
@@ -46,9 +46,9 @@ function sidebar({isVisible}) {
             </a>
           </li>
           <li className="nav-item mb-4">
-            <a href="/members" className={'nav-link text-tertiary hover:text-primary hover:!bg-[#f1f3f] py-3 pr-3 pl-10 flex leading-6 align-middle items-center ' + isActive("/members")}>
+            <a href="/students" className={'nav-link text-tertiary hover:text-primary hover:!bg-[#f1f3f] py-3 pr-3 pl-10 flex leading-6 align-middle items-center ' + isActive("/students")}>
               <i className="bi bi-people-fill mr-4 text-2xl leading-6"></i>
-              <span className="inline text-base leading-4 hover:text-primary">Members</span>
+              <span className="inline text-base leading-4 hover:text-primary">Students</span>
               <p className="notif"></p>
             </a>
           </li>

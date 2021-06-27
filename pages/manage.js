@@ -26,7 +26,7 @@ export default function manage() {
         <PerfectScrollbar options={{ wheelSpeed: 0.2 , swipeEasing: true}}>
           <div className="container p-6">
             <div className="h-screen pb-24 pt-2 pr-2 pl-2 md:pt-0 md:pr-0 md:pl-0">
-              <h6 className="text-xl font-bold my-auto text-primary">Hi Khasmir!</h6>
+              <h6 className="text-xl font-bold my-auto text-primary">My Tasks</h6>
               <h2 className="text-md text-gray-400 ">I see you have tasks, finish it in time!</h2>
               <div className="flex flex-col flex-wrap sm:flex-row ">
                 <div className="w-full sm:w-1/2 xl:w-1/3">
