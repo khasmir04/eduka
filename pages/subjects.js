@@ -58,7 +58,7 @@ function subjects() {
               <div className="border-2 border-c_light shadow-lg px-4 py-6 w-full bg-white dark:bg-gray-700 cursor-pointer transform transition duration-300 hover:scale-105 relative">
                 <div className="flex items-center">
                   <div className="w-full object-cover w-32 h-32">
-                    <img src="/img/subjects/JS-logo.svg" alt="javascript" />
+                    <img src="/img/subjects/javascript.png" alt="javascript" />
                   </div>
                 </div>
                 <div className="flex items-end space-x-2 my-6">
