@@ -13,7 +13,7 @@
 <br />
 <p align="center">
 <!--   <a href="https://github.com/khasmir04/eduka">
-    <img src="/assets/img/logo-cropped.svg" alt="Logo" width="80" height="80">
+    <img src="/img/logo-cropped.svg" alt="Logo" width="80" height="80">
   </a> -->
 
   <h3 align="center">Dashboard project built on Nextjs Framework</h3>
@@ -49,15 +49,15 @@ Languages and Tools Used🛠:
 <code><img height="20" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Github-desktop-logo-symbol.svg/1024px-Github-desktop-logo-symbol.svg.png"></code>
 <code><img height="20" src="https://upload.wikimedia.org/wikipedia/en/d/d2/Sublime_Text_3_logo.png"></code>
 <code><img height="20" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/1024px-Visual_Studio_Code_1.35_icon.svg.png"></code>
-<code><img height="20" src="/public/assets/img/tools/nextjs.png"></code>
-<code><img height="20" src="/public/assets/img/tools/slick.gif"></code>
-<code><img height="20" src="/public/assets/img/tools/filepond.png"></code>
-<code><img height="20" src="/public/assets/img/tools/headless.jpg"></code>
-<code><img height="20" src="/public/assets/img/tools/heroicons.png"></code>
-<code><img height="20" src="/public/assets/img/tools/loader-spinner.png"></code>
-<code><img height="20" src="/public/assets/img/tools/perfect-scrollbar.png"></code>
-<code><img height="20" src="/public/assets/img/tools/swiper-logo.svg"></code>
-<code><img height="20" src="/public/assets/img/tools/tailwind.svg"></code>
+<code><img height="20" src="/public/img/tools/nextjs.png"></code>
+<code><img height="20" src="/public/img/tools/slick.gif"></code>
+<code><img height="20" src="/public/img/tools/filepond.png"></code>
+<code><img height="20" src="/public/img/tools/headless.jpg"></code>
+<code><img height="20" src="/public/img/tools/heroicons.png"></code>
+<code><img height="20" src="/public/img/tools/loader-spinner.png"></code>
+<code><img height="20" src="/public/img/tools/perfect-scrollbar.png"></code>
+<code><img height="20" src="/public/img/tools/swiper-logo.svg"></code>
+<code><img height="20" src="/public/img/tools/tailwind.svg"></code>
 
 </details>
 
@@ -216,5 +216,5 @@ Project Link: [https://github.com/khasmir04/eduka](https://github.com/khasmir04/
 [license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/khasmir/
-[product-screenshot1]: /public/assets/img/Screenshot1.png
-[product-screenshot2]: /public/assets/img/Screenshot2.png
+[product-screenshot1]: /public/img/Screenshot1.png
+[product-screenshot2]: /public/img/Screenshot2.png
