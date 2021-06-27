@@ -36,7 +36,7 @@ function overview() {
                       <h2 className="text-md text-gray-400 ">Welcome! Is everything good?</h2>
                     </div>
                     <div className="flex flex-wrap bg-gray-100 rounded-xl">
-                      <div className="w-full lg:w-8/12 p-4 h-[300px] lg:h-full">
+                      <div className="w-full lg:w-8/12 p-4 h-[300px]">
                         <LineChart />
                       </div>
                       <div className="w-full lg:w-4/12">

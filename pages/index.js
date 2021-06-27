@@ -41,7 +41,7 @@ function login() {
 
 	const proceedToDashboard = (e) => {
 		e.preventDefault()
-		if(name=="devkj@gmail.com" && password=="devkim"){
+		if(name=="devkj@gmail.com" && password=="khasmir"){
 			loginSuccess();
 		} else {
       loginFailed();
